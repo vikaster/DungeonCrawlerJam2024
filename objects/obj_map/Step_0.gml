@@ -1,6 +1,6 @@
 if (instance_number(obj_transition_parent) == 0){
 
-	if (keyboard_check_pressed(ord("W"))){
+	if (keyboard_check(ord("W"))){
 		
 		if (grid_x + a_gridxy[compass_point][0] < 0 || grid_x + a_gridxy[compass_point][0] >= map_w) ||
 		   (grid_y + a_gridxy[compass_point][1] < 0 || grid_y + a_gridxy[compass_point][1] >= map_h) {
@@ -69,7 +69,7 @@ if (instance_number(obj_transition_parent) == 0){
 		//show_debug_message("visual_grid_y: " + string(visual_grid_y));
 	}
 
-	if (keyboard_check_pressed(ord("S"))){
+	if (keyboard_check(ord("S"))){
 		
 		grid_x += a_gridxy[compass_point, 0];
 		grid_y -= a_gridxy[compass_point, 1];
@@ -82,7 +82,7 @@ if (instance_number(obj_transition_parent) == 0){
 		
 	}
 
-	if (keyboard_check_pressed(ord("A"))){
+	if (keyboard_check(ord("A"))){
 		//if (grid_x > 5) grid_x --;	
 		//Turn Left
 		if (compass_point - 1) >= 0 compass_point --;
@@ -92,7 +92,7 @@ if (instance_number(obj_transition_parent) == 0){
 		scr_update_view_grid();
 	}
 
-	if (keyboard_check_pressed(ord("D"))){
+	if (keyboard_check(ord("D"))){
 		//if (grid_x < ds_grid_width(terrain) - 5) grid_x ++;	
 		if (compass_point + 1) < e_compass.last compass_point ++;
 		else compass_point = 0;
@@ -101,6 +101,6 @@ if (instance_number(obj_transition_parent) == 0){
 		scr_update_view_grid();
 	}
 
-	if (keyboard_check_pressed(vk_f5) ) game_restart();
+	//if (keyboard_check_pressed(vk_f5) ) game_restart();
 
 }
