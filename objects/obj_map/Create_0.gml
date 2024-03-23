@@ -8,6 +8,9 @@ grid_y = 8;
 visual_grid_x = grid_x;
 visual_grid_y = grid_y;
 
+map_w = ds_grid_width(terrain);
+map_h = ds_grid_height(terrain);
+
 enum e_terrain{
 	plains,
 	forest,

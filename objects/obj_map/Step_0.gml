@@ -2,6 +2,13 @@ if (instance_number(obj_transition_parent) == 0){
 
 	if (keyboard_check_pressed(ord("W"))){
 		
+		if (grid_x + a_gridxy[compass_point][0] < 0 || grid_x + a_gridxy[compass_point][0] >= map_w) ||
+		   (grid_y + a_gridxy[compass_point][1] < 0 || grid_y + a_gridxy[compass_point][1] >= map_h) {
+			
+			//Movement BLocked
+			exit;
+		}
+		
 		/*
 		  ########### v               11  (5) (y_dist * 2) + 1
 		   #########  v  #########     9  (4)

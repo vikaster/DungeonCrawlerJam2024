@@ -66,7 +66,6 @@
     {"id":{"name":"obj_transition_parent","path":"objects/obj_transition_parent/obj_transition_parent.yy",},},
     {"id":{"name":"obj_transition_sideways","path":"objects/obj_transition_sideways/obj_transition_sideways.yy",},},
     {"id":{"name":"obj_transition_forwards","path":"objects/obj_transition_forwards/obj_transition_forwards.yy",},},
-    {"id":{"name":"obj_main","path":"objects/obj_main/obj_main.yy",},},
     {"id":{"name":"room0","path":"rooms/room0/room0.yy",},},
   ],
   "resourceType":"GMProject",
