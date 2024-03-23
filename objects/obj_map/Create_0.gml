@@ -11,6 +11,8 @@ visual_grid_y = grid_y;
 map_w = ds_grid_width(terrain);
 map_h = ds_grid_height(terrain);
 
+stored_move = undefined;
+
 enum e_terrain{
 	plains,
 	forest,

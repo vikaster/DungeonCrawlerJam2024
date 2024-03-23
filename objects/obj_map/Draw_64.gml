@@ -1,19 +1,16 @@
-
-draw_set_valign(fa_top);
-draw_set_halign(fa_left);
-draw_set_font(fnt_normal);
-//draw_text(0,0,"obj: " + string(instance_number(obj_transition_sideways)) );
-draw_text(0,0, string({grid_x : grid_x, visual_grid_x : visual_grid_x}) );
-draw_text(0,20, string({grid_y : grid_y, visual_grid_y : visual_grid_y}) );
-//draw_text(0,40,"movement: " + string(movement) );
+//draw_set_valign(fa_top);
+//draw_set_halign(fa_left);
+//draw_set_font(fnt_normal);
+//draw_text(0,0, string({grid_x : grid_x, visual_grid_x : visual_grid_x}) );
+//draw_text(0,20, string({grid_y : grid_y, visual_grid_y : visual_grid_y}) );
 
 
-var _start_y = 40;
+var _start_y = 0;// 40;
 
 
 for (var yy = 0; yy < ds_grid_height(terrain); yy ++){
 	for (var xx = 0; xx < ds_grid_width(terrain); xx ++){
-		var _draw_x = 100 + (xx * 12);
+		var _draw_x = 0 + (xx * 12);
 		var _draw_y = _start_y + (yy * 12);
 		
 		if (xx == grid_x && yy == grid_y){
