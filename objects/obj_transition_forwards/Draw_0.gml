@@ -4,8 +4,8 @@ var y_count = 0;
 for (var yy = gy - y_dist; yy < gy; yy ++){
 	
 	var x_count = 0;
-	show_debug_message("y_dist: " + string(y_dist));
-	show_debug_message("");
+	//show_debug_message("y_dist: " + string(y_dist));
+	//show_debug_message("");
 
 	for (var xx = gx - y_dist; xx <= gx + y_dist; xx ++){
 		if (xx >= 0 && gy > 0 && xx < ds_grid_width(obj_map.visual_grid) && yy >= 0 && yy < ds_grid_height(obj_map.visual_grid) ){
@@ -31,7 +31,7 @@ for (var yy = gy - y_dist; yy < gy; yy ++){
 
 		x_count ++;
 	}
-	show_debug_message("scale: " + string(scale) + " | new_scale: " + string(new_scale) + " | prev_draw_y: " + string(prev_draw_y) + " | draw_y: " + string(draw_y));
+	//show_debug_message("scale: " + string(scale) + " | new_scale: " + string(new_scale) + " | prev_draw_y: " + string(prev_draw_y) + " | draw_y: " + string(draw_y));
 	y_dist --
 	y_count ++;
 }

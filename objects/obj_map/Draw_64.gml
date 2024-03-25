@@ -1,17 +1,17 @@
-/*
-draw_set_valign(fa_top);
-draw_set_halign(fa_left);
-draw_set_font(fnt_normal);
-draw_text(0,0,"obj: " + string(instance_number(obj_transition_sideways)) );
-//draw_text(0,0,"grid_X: " + string(grid_x) );
-//draw_text(0,20,"grid_y: " + string(grid_y) );
-//draw_text(0,40,"movement: " + string(movement) );
+//draw_set_valign(fa_top);
+//draw_set_halign(fa_left);
+//draw_set_font(fnt_normal);
+//draw_text(0,0, string({grid_x : grid_x, visual_grid_x : visual_grid_x}) );
+//draw_text(0,20, string({grid_y : grid_y, visual_grid_y : visual_grid_y}) );
+
+
+var _start_y = 0;// 40;
 
 
 for (var yy = 0; yy < ds_grid_height(terrain); yy ++){
 	for (var xx = 0; xx < ds_grid_width(terrain); xx ++){
-		var draw_x = 100 + (xx * 12);
-		var draw_y = (yy * 12);
+		var _draw_x = 0 + (xx * 12);
+		var _draw_y = _start_y + (yy * 12);
 		
 		if (xx == grid_x && yy == grid_y){
 			col = make_color_rgb(irandom(255), irandom(255), irandom(255) );
@@ -20,7 +20,7 @@ for (var yy = 0; yy < ds_grid_height(terrain); yy ++){
 		
 		var num = real(string_digits(terrain[# xx, yy]));
 		var char = string_char_at(terrain_string, num + 1);
-		draw_text(draw_x, draw_y, char);
+		draw_text(_draw_x, _draw_y, char);
 		
 		/*
 		if (xx == grid_x && yy == grid_y){
@@ -45,12 +45,12 @@ for (var yy = 0; yy < ds_grid_height(terrain); yy ++){
 			draw_set_color(c_green);
 			draw_text(draw_x + 300, draw_y, "$");
 		}
-		
+		*/
 	}
 }
 
 
-*/
+
 draw_sprite_ext(spr_compass, 0, display_get_gui_width() - 32, 32, 4, 4, compass_point * -90, c_white, 0.75);
 //var location = obj_main.settlement_grid[# grid_x, grid_y];
 //if (location != noone){

@@ -83,7 +83,7 @@ function scr_update_view_grid() {
 		show_debug_message("visual_grid_y: " + string(other.visual_grid_y ));
 	
 		for (var y_dist = 4; y_dist >= 1; y_dist --){
-			show_debug_message("y_dist: " + string(y_dist ));
+			//show_debug_message("y_dist: " + string(y_dist ));
 		
 			//Make a list for each "layer" - farthest away first
 			list = ds_list_create();

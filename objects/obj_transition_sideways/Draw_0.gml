@@ -20,7 +20,7 @@ for (var y_dist = 4; y_dist >= 1; y_dist --){
 
 	for (var xx = start_x; xx < end_x; xx ++){
 		var w = room_width / (1 + (y_dist * 2) );
-		var scale = w/128; show_debug_message(string(y_dist) + " | scale: " + string(scale))
+		var scale = w/128;// show_debug_message(string(y_dist) + " | scale: " + string(scale))
 		var h = 10 * scale;
 
 		if (move_dir == -1) var draw_x = w/2 + (xx * (w));
