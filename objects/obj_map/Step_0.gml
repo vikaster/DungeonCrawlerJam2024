@@ -25,8 +25,10 @@ if (instance_number(obj_transition_parent) == 0){
 	//if (keyboard_check_pressed(vk_f5) ) game_restart();
 	
 	if (keyboard_check_pressed(vk_space)){
-		with(obj_rhythm) instance_destroy();
-		instance_create_layer(0,0,"Notes", obj_rhythm);	
+		//with(obj_rhythm) instance_destroy();
+		if (!instance_exists(obj_rhythm)){
+			instance_create_layer(0,0,"Rhythm_bg", obj_rhythm);	
+		}
 	}
 
 }else{

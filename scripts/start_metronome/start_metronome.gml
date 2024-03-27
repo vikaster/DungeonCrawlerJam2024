@@ -3,7 +3,7 @@
 ///@param beats_per_measure  
 ///@param activator          //The object that will handle the events unchained by the beats
 function start_metronome(_bpm, _time_signature, _activator_name) {
-
+	show_debug_message("start_metronome running")
 	//We pass all the variables before creating the metronome
 
 	var _instance = instance_create_depth(x,y,depth,oEmpty);//@Rob can probably refactor this, wait until you know this code is implemented properly tho

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"start_metronome",
   "parent":{
-    "name":"SCRIPTS",
-    "path":"folders/BPM/SCRIPTS.yy",
+    "name":"Rhythm Game",
+    "path":"folders/Scripts/Rhythm Game.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

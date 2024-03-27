@@ -17,7 +17,7 @@ function beat_script(){
 	
 	#endregion
 
-	with obj_note_test{
+	with obj_note{
 		//We want movement per step, corrected by this value
 		//x += other.pixels_per_beat;	
 		//x = oMetronome.total_beats * other.pixels_per_beat;
