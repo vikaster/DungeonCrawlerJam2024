@@ -2,7 +2,7 @@
 
 //x = lerp(0, (CAM_W / 2), _amount);
 
-x += oEmpty.pixels_per_beat / 19;
+if (oMetronome.first_beat_done) x += oEmpty.pixels_per_beat / 19;
 
 if (my_beat == oEmpty.beats) image_index = 1;
 else image_index = 0;

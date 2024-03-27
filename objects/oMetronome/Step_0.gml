@@ -22,12 +22,12 @@ if(timer - delta_time/1000 >= bpm_ms_current)
 {
 	if(beat == 1) //On the first beat...
 	{
-		audio_play_sound(sndMetronomeHigh,10,false); //High pitch sound
+		//audio_play_sound(sndMetronomeHigh,10,false); //High pitch sound
 		with(activator){event_user(0);}				 //Same as create event
 	}
 	else //On every other beat of the measure
 	{
-		audio_play_sound(sndMetronomeLow,10,false); //Low pitch sound
+		//audio_play_sound(sndMetronomeLow,10,false); //Low pitch sound
 		with(activator){event_user(1);}				//Activate the event 1 rather than event 0
 	}
 	
@@ -38,6 +38,8 @@ if(timer - delta_time/1000 >= bpm_ms_current)
 	else						beat++;
 	
 	total_beats ++;
+	
+	if (!first_beat_done) first_beat_done = true;
 }
 
 step_counter ++

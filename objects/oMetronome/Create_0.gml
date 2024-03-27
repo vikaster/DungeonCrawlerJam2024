@@ -4,7 +4,7 @@
 bpm_ms = 60000/bpm;		//BPM to ms equation formula
 bpm_ms_current = bpm_ms;
 
-audio_play_sound(sndMetronomeHigh,10,false); //Starting beat
+//audio_play_sound(sndMetronomeHigh,10,false); //Starting beat
 
 beat = 2; //Number of the current beat (starts in two because it assumes the first one with the previous sound)
 
@@ -23,3 +23,5 @@ if (!audio_is_playing(FansDemand_TheOuch_A_Easy_Chords_90BPM)){
 }
 
 step_counter = 0;
+
+first_beat_done = false;
