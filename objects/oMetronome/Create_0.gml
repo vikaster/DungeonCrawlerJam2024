@@ -8,6 +8,8 @@ audio_play_sound(sndMetronomeHigh,10,false); //Starting beat
 
 beat = 2; //Number of the current beat (starts in two because it assumes the first one with the previous sound)
 
+total_beats = 0;
+
 timer_start = get_timer()/1000; //Start the timer
 
 activator = instance_create_depth(x,y,depth,activator_name); //Creates the activator given by the parameter on start_metronome();

@@ -1,1 +1,3 @@
-notes = "";
+//notes = "";
+
+beats = 0;
