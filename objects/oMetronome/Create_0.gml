@@ -19,8 +19,8 @@ with(activator){event_user(0);} //Launches the event0 of the activator (Event 0 
 if (!audio_is_playing(FansDemand_TheOuch_A_Easy_Chords_90BPM)){
 	track = {
 		main : audio_play_sound(FansDemand_TheOuch_A_Easy_Chords_90BPM, 0, false),
-		fail_track : audio_play_sound(FansDemand_TheOuch_A1_Easy_Fails_90BPM_Banjo, 0, false, 0),
-		success_track : audio_play_sound(FansDemand_TheOuch_A1_Easy_Success_90BPM_Banjo, 0, false),
+		fail : audio_play_sound(FansDemand_TheOuch_A1_Easy_Fails_90BPM_Banjo, 0, false),
+		success : audio_play_sound(FansDemand_TheOuch_A1_Easy_Success_90BPM_Banjo, 0, false, 0),
 	}
 }
 
