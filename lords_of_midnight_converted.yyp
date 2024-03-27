@@ -93,8 +93,6 @@
     {"id":{"name":"FansDemand_TheOuch_F_Hard_Success_140BPM_AcouGuitar","path":"sounds/FansDemand_TheOuch_F_Hard_Success_140BPM_AcouGuitar/FansDemand_TheOuch_F_Hard_Success_140BPM_AcouGuitar.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"create_menu_page","path":"scripts/create_menu_page/create_menu_page.yy",},},
-    {"id":{"name":"movementScripts","path":"scripts/movementScripts/movementScripts.yy",},},
-    {"id":{"name":"scr_update_view_grid","path":"scripts/scr_update_view_grid/scr_update_view_grid.yy",},},
     {"id":{"name":"spr_army","path":"sprites/spr_army/spr_army.yy",},},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},},
     {"id":{"name":"spr_cavern","path":"sprites/spr_cavern/spr_cavern.yy",},},
