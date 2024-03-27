@@ -11,18 +11,18 @@ if (state == e_rhythm.play){
 					var _x = camera_get_view_x(view_camera[0]) + 16;//42 + (i * 75) + camera_get_view_x(view_camera[0]);
 					var _y = camera_get_view_y(view_camera[0]) + (CAM_H - 28);//camera_get_view_y(view_camera[0]);
 				
-					var _note = instance_create_layer(_x, _y, "Notes", obj_note);
-					array_insert(unplayed_notes, 0, _note);
+					//var _note = instance_create_layer(_x, _y, "Notes", obj_note);
+					//array_insert(unplayed_notes, 0, _note);
 				
 					//_str += _char;
 				}
-				show_debug_message("char: " + _char)
+				//show_debug_message("char: " + _char)
 			//}
 			//show_debug_message("array_index: " + string(array_index) + " | " + _str)
 		
 			play_progress = 0;
 		}
-		show_debug_message("array_index: " + string(array_index) + " | play_progress: " + string(play_progress))
+		//show_debug_message("array_index: " + string(array_index) + " | play_progress: " + string(play_progress))
 	}
 	
 	if (mouse_check_button_pressed(mb_left) && array_length(unplayed_notes) > 0){

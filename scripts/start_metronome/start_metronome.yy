@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"start_metronome",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"start_metronome",
+  "parent":{
+    "name":"SCRIPTS",
+    "path":"folders/BPM/SCRIPTS.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -10,8 +10,8 @@
   "name":"obj_rhythm",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Rhythm Game",
+    "path":"folders/Objects/Rhythm Game.yy",
   },
   "parentObjectId":null,
   "persistent":false,
