@@ -10,11 +10,11 @@ timer = get_timer()/1000 - timer_start; //Update the timer
 //every error can be fixed in the next beat, thus keeping it synchronized perfectly to the ear.
 //Long explanation.
 
-if (!audio_is_playing(FansDemand_TheOuch_A_Easy_Chords_90BPM)){
-	audio_play_sound(FansDemand_TheOuch_A_Easy_Chords_90BPM, 0, false);
-	audio_play_sound(FansDemand_TheOuch_A1_Easy_Fails_90BPM_Banjo, 0, false, 0);
-	audio_play_sound(FansDemand_TheOuch_A1_Easy_Success_90BPM_Banjo, 0, false);
-}
+//if (!audio_is_playing(FansDemand_TheOuch_A_Easy_Chords_90BPM)){
+//	audio_play_sound(FansDemand_TheOuch_A_Easy_Chords_90BPM, 0, false);
+//	audio_play_sound(FansDemand_TheOuch_A1_Easy_Fails_90BPM_Banjo, 0, false, 0);
+//	audio_play_sound(FansDemand_TheOuch_A1_Easy_Success_90BPM_Banjo, 0, false);
+//}
 
 if(timer - delta_time/1000 >= bpm_ms_current) 
 {
