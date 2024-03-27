@@ -32,3 +32,14 @@ for (var i = 1; i < string_length(obj_rhythm.music); i ++){
 }
 
 show_debug_message("notes: " + string(instance_number(obj_note)))
+
+player = {
+	x : CAM_W,
+	y : CAM_H,
+}
+
+enemy = {
+	x : CAM_W/2,
+	y : 200,
+	sprite_index : spr_peasant_coffin,
+}
