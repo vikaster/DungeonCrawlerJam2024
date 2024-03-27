@@ -10,6 +10,8 @@ function note_success(_note){
 			audio_sound_gain(fail, 0, 0);
 		}
 	}
+	
+	global.player.confidence.current = clamp(global.player.confidence.current + CONFIDENCE_GAINED_PER_SUCCESS, 0, global.player.confidence.max);
 }
 
 function note_fail(_note){
@@ -22,4 +24,6 @@ function note_fail(_note){
 			audio_sound_gain(fail, 1, 0);
 		}
 	}
+	
+	global.player.confidence.current = clamp(global.player.confidence.current - CONFIDENCE_LOST_PER_FAIL, 0, global.player.confidence.max);
 }
