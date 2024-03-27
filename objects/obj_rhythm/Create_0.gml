@@ -22,3 +22,6 @@ right = left + 32;
 difficulty = 8; //Higher = easier
 
 unplayed_notes = [];
+
+audio_play_sound(FansDemand_TheOuch_A_Easy_Chords_90BPM, 0, false);
+audio_play_sound(FansDemand_TheOuch_A1_Easy_Success_90BPM_Banjo, 0, false);
