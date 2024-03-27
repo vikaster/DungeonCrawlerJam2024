@@ -43,3 +43,7 @@ enemy = {
 	y : 200,
 	sprite_index : spr_peasant_coffin,
 }
+
+enum e_rhythm_game {play, success, fail}
+
+state = e_rhythm_game.play;

@@ -26,4 +26,10 @@ function note_fail(_note){
 	}
 	
 	global.player.confidence.current = clamp(global.player.confidence.current - CONFIDENCE_LOST_PER_FAIL, 0, global.player.confidence.max);
+
+	with oEmpty{
+		if (global.player.confidence.current == 0){
+			state = e_rhythm_game.fail;	
+		}
+	}
 }

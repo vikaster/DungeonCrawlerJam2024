@@ -49,6 +49,7 @@
     {"name":"movementScripts","order":2,"path":"scripts/movementScripts/movementScripts.yy",},
     {"name":"noteScripts","order":2,"path":"scripts/noteScripts/noteScripts.yy",},
     {"name":"scr_update_view_grid","order":1,"path":"scripts/scr_update_view_grid/scr_update_view_grid.yy",},
+    {"name":"cleanup_battle","order":3,"path":"scripts/cleanup_battle/cleanup_battle.yy",},
     {"name":"FansDemand_TheOuch_A1_Easy_Fails_90BPM_Banjo","order":2,"path":"sounds/FansDemand_TheOuch_A1_Easy_Fails_90BPM_Banjo/FansDemand_TheOuch_A1_Easy_Fails_90BPM_Banjo.yy",},
     {"name":"FansDemand_TheOuch_A1_Easy_Success_90BPM_Banjo","order":1,"path":"sounds/FansDemand_TheOuch_A1_Easy_Success_90BPM_Banjo/FansDemand_TheOuch_A1_Easy_Success_90BPM_Banjo.yy",},
     {"name":"FansDemand_TheOuch_A2_Easy_Fails_90BPM_Banjo","order":4,"path":"sounds/FansDemand_TheOuch_A2_Easy_Fails_90BPM_Banjo/FansDemand_TheOuch_A2_Easy_Fails_90BPM_Banjo.yy",},
