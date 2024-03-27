@@ -21,3 +21,5 @@ if (!audio_is_playing(FansDemand_TheOuch_A_Easy_Chords_90BPM)){
 	audio_play_sound(FansDemand_TheOuch_A1_Easy_Fails_90BPM_Banjo, 0, false, 0);
 	audio_play_sound(FansDemand_TheOuch_A1_Easy_Success_90BPM_Banjo, 0, false);
 }
+
+step_counter = 0;

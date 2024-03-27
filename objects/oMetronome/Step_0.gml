@@ -16,6 +16,8 @@ timer = get_timer()/1000 - timer_start; //Update the timer
 //	audio_play_sound(FansDemand_TheOuch_A1_Easy_Success_90BPM_Banjo, 0, false);
 //}
 
+show_debug_message("beat: " + string(beat) + " | step_counter: " + string(step_counter) + " | timer : " + string(timer) + " | delta_time: " + string(delta_time) + " | delta_time/1000: " + string(delta_time/1000) + " | bpm_ms_current: " + string(bpm_ms_current))
+
 if(timer - delta_time/1000 >= bpm_ms_current) 
 {
 	if(beat == 1) //On the first beat...
@@ -35,5 +37,7 @@ if(timer - delta_time/1000 >= bpm_ms_current)
 	if(beat == time_signature)	beat = 1; 
 	else						beat++;
 	
-	
+	total_beats ++;
 }
+
+step_counter ++
