@@ -11,8 +11,8 @@
   "name":"oMetronome",
   "overriddenProperties":[],
   "parent":{
-    "name":"OBJECTS",
-    "path":"folders/BPM/OBJECTS.yy",
+    "name":"Rhythm Game",
+    "path":"folders/Objects/Rhythm Game.yy",
   },
   "parentObjectId":null,
   "persistent":false,

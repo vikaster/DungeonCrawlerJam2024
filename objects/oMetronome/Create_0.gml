@@ -9,6 +9,7 @@ audio_play_sound(sndMetronomeHigh,10,false); //Starting beat
 beat = 2; //Number of the current beat (starts in two because it assumes the first one with the previous sound)
 
 total_beats = 0;
+first_playable_note = 8;
 
 timer_start = get_timer()/1000; //Start the timer
 

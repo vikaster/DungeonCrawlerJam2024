@@ -1,13 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oEmpty",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":11,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_note_test",
+  "eventList":[],
   "managed":true,
-  "name":"oEmpty",
+  "name":"obj_note_test",
   "overriddenProperties":[],
   "parent":{
     "name":"Rhythm Game",
@@ -18,7 +14,7 @@
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
-  "physicsGroup":0,
+  "physicsGroup":1,
   "physicsKinematic":false,
   "physicsLinearDamping":0.1,
   "physicsObject":false,
@@ -31,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_note",
+    "path":"sprites/spr_note/spr_note.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
