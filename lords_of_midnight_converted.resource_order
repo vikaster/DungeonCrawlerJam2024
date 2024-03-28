@@ -2,6 +2,7 @@
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
     {"name":"fnt_normal","order":1,"path":"fonts/fnt_normal/fnt_normal.yy",},
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     {"name":"fnt_start","order":2,"path":"fonts/fnt_start/fnt_start.yy",},
     {"name":"fnt_title","order":3,"path":"fonts/fnt_title/fnt_title.yy",},
@@ -13,9 +14,14 @@
     {"name":"Room2","order":1,"path":"rooms/Room2/Room2.yy",},
     {"name":"create_menu_page","order":1,"path":"scripts/create_menu_page/create_menu_page.yy",},
 =======
+=======
+    {"name":"obj_menu","order":1,"path":"objects/obj_menu/obj_menu.yy",},
+>>>>>>> Stashed changes
     {"name":"obj_transition_forwards","order":3,"path":"objects/obj_transition_forwards/obj_transition_forwards.yy",},
     {"name":"obj_transition_parent","order":1,"path":"objects/obj_transition_parent/obj_transition_parent.yy",},
     {"name":"obj_transition_sideways","order":2,"path":"objects/obj_transition_sideways/obj_transition_sideways.yy",},
+    {"name":"Room2","order":1,"path":"rooms/Room2/Room2.yy",},
+    {"name":"create_menu_page","order":2,"path":"scripts/create_menu_page/create_menu_page.yy",},
     {"name":"movementScripts","order":1,"path":"scripts/movementScripts/movementScripts.yy",},
 >>>>>>> main
     {"name":"spr_army","order":2,"path":"sprites/spr_army/spr_army.yy",},
@@ -45,6 +51,10 @@
 =======
     {"name":"spr_village","order":6,"path":"sprites/spr_village/spr_village.yy",},
     {"name":"sprite17","order":9,"path":"sprites/sprite17/sprite17.yy",},
+<<<<<<< Updated upstream
 >>>>>>> main
+=======
+    {"name":"Sprite23","order":10,"path":"sprites/Sprite23/Sprite23.yy",},
+>>>>>>> Stashed changes
   ],
 }
