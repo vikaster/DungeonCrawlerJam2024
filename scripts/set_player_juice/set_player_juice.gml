@@ -2,13 +2,14 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function set_player_juice(_in = true){
 	if (_in){
+		show_debug_message("setting juice to JuiceIn")
 		var _curve = {
 			inc : 0.05,
 			timer : 0,
 			channel_x : animcurve_get_channel(playerJuiceIn, "x"),
 		}	
 	}else{
-		//show_debug_message("setting juice to JuiceOut")
+		show_debug_message("setting juice to JuiceOut")
 		_curve = {
 			inc : 0.05,
 			timer : 0,

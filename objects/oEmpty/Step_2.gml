@@ -6,3 +6,5 @@ if (_diff != 0){
 
 //show_debug_message("fail: " + string(audio_sound_get_gain(track.fail)))
 //show_debug_message("success: " + string(audio_sound_get_gain(track.success)))
+
+//show_debug_message("alarm[0]: " + string(alarm[0]))

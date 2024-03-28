@@ -30,6 +30,7 @@ if (state == e_rhythm_game.play){
 
 //Juice
 if (player.juice.timer <= 1){
+	//show_debug_message("player.juice.timer")
 	player.x = CAM_W + animcurve_channel_evaluate(player.juice.channel_x, player.juice.timer);
 	enemy.y = animcurve_channel_evaluate(enemy.juice.channel_y, enemy.juice.timer) + 200;
 	bar.x = 10 - animcurve_channel_evaluate(player.juice.channel_x, player.juice.timer);
@@ -42,4 +43,11 @@ if (player.juice.timer <= 1){
 	if (state == e_rhythm_game.success){
 		cleanup_battle();	
 	}
+}
+
+if (state == e_rhythm_game.fail){
+	var _pitch = 0.5 + ((alarm[0] / (GAMESPEED_FPS * 2)) / 2)
+	audio_sound_pitch(track.main, _pitch);	
+	audio_sound_pitch(track.fail, _pitch);
+	audio_sound_pitch(track.success, _pitch);
 }

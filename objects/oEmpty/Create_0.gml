@@ -72,3 +72,5 @@ state = e_rhythm_game.play;
 
 player.juice = set_player_juice();
 enemy.juice = set_enemy_juice();
+
+surf_battle_lost = -1;

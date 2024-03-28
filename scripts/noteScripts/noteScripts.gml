@@ -55,7 +55,7 @@ function note_fail(_note){
 
 	with oEmpty{
 		if (global.player.confidence.current == 0){
-			state = e_rhythm_game.fail;	
+			battle_lost();
 		}
 	}
 }

@@ -2,11 +2,13 @@
 #macro CAM_H camera_get_view_height(view_camera[0])
 #macro GUI_W display_get_gui_width()
 #macro GUI_H display_get_gui_height()
+#macro GAMESPEED_FPS game_get_speed(gamespeed_fps)
 
 #macro CONFIDENCE_LOST_PER_FAIL 2
 #macro CONFIDENCE_GAINED_PER_SUCCESS 1
 
 global.player = {
+	self_respect : {current : 5, max : 10, display : 5},
 	confidence : {current : 20, max : 20, display : 20}	
 }
 

@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"set_player_juice",
+  "%Name":"battle_lost",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"set_player_juice",
+  "name":"battle_lost",
   "parent":{
     "name":"Rhythm Game",
     "path":"folders/Scripts/Rhythm Game.yy",
