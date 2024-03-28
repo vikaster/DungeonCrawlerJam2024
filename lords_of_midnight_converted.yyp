@@ -68,7 +68,6 @@
     {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},},
     {"id":{"name":"obj_note_old","path":"objects/obj_note_old/obj_note_old.yy",},},
     {"id":{"name":"obj_note","path":"objects/obj_note/obj_note.yy",},},
-    {"id":{"name":"obj_rhythm","path":"objects/obj_rhythm/obj_rhythm.yy",},},
     {"id":{"name":"obj_transition_forwards","path":"objects/obj_transition_forwards/obj_transition_forwards.yy",},},
     {"id":{"name":"obj_transition_parent","path":"objects/obj_transition_parent/obj_transition_parent.yy",},},
     {"id":{"name":"obj_transition_sideways","path":"objects/obj_transition_sideways/obj_transition_sideways.yy",},},
