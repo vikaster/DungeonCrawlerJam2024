@@ -8,7 +8,7 @@ function set_enemy_juice(_in = true){
 			channel_y : animcurve_get_channel(enemyJuiceIn, "y"),
 		}	
 	}else{
-		show_debug_message("setting juice to JuiceOut")
+		//show_debug_message("setting juice to JuiceOut")
 		_curve = {
 			inc : 0.05,
 			timer : 0,

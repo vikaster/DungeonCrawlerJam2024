@@ -11,6 +11,16 @@ function note_success(_note){
 				audio_sound_gain(fail, 0, 0);
 			}
 			note_tracker.success ++;
+			note_tracker.total ++;
+			
+			show_debug_message("total: " + string(note_tracker.total) + " | max: " + string(total_playable_notes))
+			
+			if (note_tracker.total == total_playable_notes){
+				with note_tracker{
+					percentage = (success / total) * 100;
+					show_debug_message("Percentange: " + string(percentage))
+				}
+			}
 		}
 	}
 	
@@ -28,6 +38,16 @@ function note_fail(_note){
 				audio_sound_gain(fail, 1, 0);
 			}
 			note_tracker.fail ++;
+			note_tracker.total ++;
+			
+			show_debug_message("total: " + string(note_tracker.total) + " | max: " + string(total_playable_notes))
+			
+			if (note_tracker.total == total_playable_notes){
+				with note_tracker{
+					percentage = (success / total) * 100;
+					show_debug_message("Percentange: " + string(percentage))
+				}
+			}
 		}
 	}
 	

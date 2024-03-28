@@ -32,6 +32,7 @@ difficulty = 8; //Higher = easier
 note_tracker = {
 	success : 0,
 	fail : 0,
+	total : 0,
 	percentage : 0,
 }
 
@@ -46,7 +47,8 @@ for (var i = 1; i < string_length(music_data.music); i ++){
 	}
 }
 
-show_debug_message("notes: " + string(instance_number(obj_note)))
+total_playable_notes = instance_number(obj_note);
+show_debug_message("total_playable_notes: " + string(total_playable_notes))
 
 player = {
 	x : CAM_W + 144,
