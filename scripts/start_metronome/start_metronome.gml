@@ -27,5 +27,5 @@ function start_metronome(_bpm, _time_signature, _activator_name) {
 	//return undefined;
 
 	instance_create_depth(x, y, depth, oMetronome, {bpm : _bpm, time_signature : _time_signature, activator_name : _activator_name})
-	instance_create_depth(x,y,depth,oEmpty);
+	instance_create_layer(x,y,"Rhythm_bg",oEmpty);
 }

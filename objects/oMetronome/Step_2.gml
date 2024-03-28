@@ -1,8 +1,9 @@
-if (!audio_is_playing(FansDemand_TheOuch_A_Easy_Chords_90BPM)){
+if (oEmpty.state == e_rhythm_game.play && !audio_is_playing(oEmpty.track.main)){
 	//show_debug_message("notes: " + oEmpty.notes + "\n" + string(string_length(oEmpty.notes)))
 	//game_end();
 	
-	oEmpty.state = e_rhythm_game.success;
-	
-	cleanup_battle();
+	with oEmpty{
+		state = e_rhythm_game.success;
+		player.juice = set_player_juice(false);
+	}
 }

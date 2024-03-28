@@ -1,4 +1,14 @@
 //notes = "";
+music_data = global.music_data[0];
+
+if (!audio_is_playing(music_data.main)){
+	track = {
+		main : audio_play_sound(music_data.main, 0, false),
+		fail : audio_play_sound(music_data.fail, 0, false),
+		success : audio_play_sound(music_data.success, 0, false, 0),
+	}
+}
+
 show_debug_message("oEmpty created")
 if (instance_number(oEmpty) > 1){
 	instance_destroy();
@@ -20,8 +30,8 @@ right = left + 32;
 
 difficulty = 8; //Higher = easier
 
-for (var i = 1; i < string_length(obj_rhythm.music); i ++){
-	if (string_char_at(obj_rhythm.music, i) == "1"){
+for (var i = 1; i < string_length(music_data.music); i ++){
+	if (string_char_at(music_data.music, i) == "1"){
 		var _x = ((CAM_W/2) - (i * pixels_per_beat))///x = start_x + (oMetronome.total_beats + 1) * other.pixels_per_beat;
 		var _note = instance_create_layer(_x, _y, "Notes", obj_note, {my_beat : i});
 		array_insert(unplayed_notes, 0, _note);
@@ -34,7 +44,7 @@ for (var i = 1; i < string_length(obj_rhythm.music); i ++){
 show_debug_message("notes: " + string(instance_number(obj_note)))
 
 player = {
-	x : CAM_W,
+	x : 144,
 	y : CAM_H,
 }
 
@@ -47,3 +57,5 @@ enemy = {
 enum e_rhythm_game {play, success, fail}
 
 state = e_rhythm_game.play;
+
+player.juice = set_player_juice();

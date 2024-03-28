@@ -25,3 +25,16 @@ if (array_length(unplayed_notes) > 0){
 		}
 	}
 }
+
+//Juice
+if (player.juice.timer <= 1){
+	player.x = CAM_W + animcurve_channel_evaluate(player.juice.channel_x, player.juice.timer);
+	
+	player.juice.timer += player.juice.inc;	
+	
+	show_debug_message("player.juice.timer: " + string(player.juice.timer))
+}else{
+	if (state == e_rhythm_game.success){
+		cleanup_battle();	
+	}
+}

@@ -7,3 +7,10 @@
 global.player = {
 	confidence : {current : 20, max : 20, display : 20}	
 }
+
+global.music_data = [
+	{main : FansDemand_TheOuch_A_Easy_Chords_90BPM, 
+	 fail : FansDemand_TheOuch_A1_Easy_Fails_90BPM_Banjo,
+	 success : FansDemand_TheOuch_A1_Easy_Success_90BPM_Banjo,
+	 music : "000000010011000101010001011100010001010100000001"}
+]

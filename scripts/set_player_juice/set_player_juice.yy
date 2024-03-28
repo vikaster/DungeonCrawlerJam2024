@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"set_player_juice",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"set_player_juice",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
