@@ -106,6 +106,7 @@ function turn_left(){
 	transition_sideways = 1;
 	show_debug_message("transition_sideways: " + string(transition_sideways));
 	scr_update_view_grid();	
+	scr_create_transition();
 }
 
 function turn_right(){
@@ -115,4 +116,5 @@ function turn_right(){
 	transition_sideways = -1;
 	show_debug_message("transition_sideways: " + string(transition_sideways));
 	scr_update_view_grid();	
+	scr_create_transition();
 }
