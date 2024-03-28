@@ -7,7 +7,7 @@
 
 var _start_y = 0;// 40;
 
-
+//MINIMAP
 //for (var yy = 0; yy < ds_grid_height(terrain); yy ++){
 //	for (var xx = 0; xx < ds_grid_width(terrain); xx ++){
 //		var _draw_x = 0 + (xx * 12);
@@ -22,30 +22,30 @@ var _start_y = 0;// 40;
 //		var char = string_char_at(terrain_string, num + 1);
 //		draw_text(_draw_x, _draw_y, char);
 		
-//		/*
-//		if (xx == grid_x && yy == grid_y){
-//			draw_set_color(c_green);
-//			draw_text(draw_x, draw_y, "$");
-//		}
-//		*/
-//		//Draw visual grid
-//		/*
-//		if (xx == visual_grid_x && yy == visual_grid_y){
-//			col = make_color_rgb(irandom(255), irandom(255), irandom(255) );
-//			draw_set_color(col);
-//		}else draw_set_colour(c_white);
+		/*
+		if (xx == grid_x && yy == grid_y){
+			draw_set_color(c_green);
+			draw_text(draw_x, draw_y, "$");
+		}
+		*/
+		//Draw visual grid
+		/*
+		if (xx == visual_grid_x && yy == visual_grid_y){
+			col = make_color_rgb(irandom(255), irandom(255), irandom(255) );
+			draw_set_color(col);
+		}else draw_set_colour(c_white);
 		
-//		var num = real(string_digits(visual_grid[# xx, yy]));
-//		var char = string_char_at(terrain_string, num + 1);
-//		//draw_text(draw_x + 300, draw_y, char);
-//		draw_text(draw_x + 300, draw_y, string(num));
+		var num = real(string_digits(visual_grid[# xx, yy]));
+		var char = string_char_at(terrain_string, num + 1);
+		//draw_text(draw_x + 300, draw_y, char);
+		draw_text(draw_x + 300, draw_y, string(num));
 		
-//		/*
-//		if (xx == visual_grid_x && yy == visual_grid_y){
-//			draw_set_color(c_green);
-//			draw_text(draw_x + 300, draw_y, "$");
-//		}
-//		*/
+		/*
+		if (xx == visual_grid_x && yy == visual_grid_y){
+			draw_set_color(c_green);
+			draw_text(draw_x + 300, draw_y, "$");
+		}
+		*/
 //	}
 //}
 

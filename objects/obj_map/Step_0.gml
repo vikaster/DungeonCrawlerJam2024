@@ -3,6 +3,7 @@ if (instance_number(obj_transition_parent) == 0){
 	if (stored_move != undefined){
 		stored_move();
 		stored_move = undefined;
+		show_debug_message("running stored move")
 		exit;
 	}
 
@@ -10,7 +11,7 @@ if (instance_number(obj_transition_parent) == 0){
 		go_forward();
 	}
 
-	if (keyboard_check(ord("S"))){
+	if (keyboard_check_pressed(ord("S"))){
 		go_back();
 	}
 
@@ -31,6 +32,10 @@ if (instance_number(obj_transition_parent) == 0){
 		//if (!instance_exists(obj_rhythm)){
 		//	instance_create_layer(0,0,"Rhythm_bg", obj_rhythm);	
 		//}
+	}
+	
+	if (keyboard_check_pressed(vk_backspace)){
+		//terrain[# grid_x + a_gridxy[compass_point][0], grid_y + a_gridxy[compass_point][1]] = irandom(e_terrain.last - 1);
 	}
 
 }else{

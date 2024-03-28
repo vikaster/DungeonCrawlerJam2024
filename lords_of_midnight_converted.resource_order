@@ -109,10 +109,10 @@
     {"name":"spr_player","order":12,"path":"sprites/spr_player/spr_player.yy",},
     {"name":"spr_question_mark","order":8,"path":"sprites/spr_question_mark/spr_question_mark.yy",},
     {"name":"spr_respect_bar_bg","order":17,"path":"sprites/spr_respect_bar_bg/spr_respect_bar_bg.yy",},
+    {"name":"spr_respect_bar","order":18,"path":"sprites/spr_respect_bar/spr_respect_bar.yy",},
     {"name":"spr_tower","order":9,"path":"sprites/spr_tower/spr_tower.yy",},
     {"name":"spr_village","order":6,"path":"sprites/spr_village/spr_village.yy",},
     {"name":"Sprite23","order":7,"path":"sprites/Sprite23/Sprite23.yy",},
     {"name":"Sprite29","order":14,"path":"sprites/Sprite29/Sprite29.yy",},
-    {"name":"spr_respect_bar","order":18,"path":"sprites/spr_respect_bar/spr_respect_bar.yy",},
   ],
 }

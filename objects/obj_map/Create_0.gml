@@ -1,5 +1,7 @@
 terrain = load_csv("lom_landscape_example.csv");
 
+terrain_that_blocks_movement = [3]; //just mountaints for now
+
 show_debug_message("w: " + string(ds_grid_width(terrain)) );
 show_debug_message("h: " + string(ds_grid_height(terrain)) );
 
