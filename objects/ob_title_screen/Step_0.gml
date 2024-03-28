@@ -1,3 +1,4 @@
-if(keyboard_check(vk_space)){
-	room_goto_next();
+// if global.cutsceneover
+if(global.cutscene){
+	visible = true;
 }
