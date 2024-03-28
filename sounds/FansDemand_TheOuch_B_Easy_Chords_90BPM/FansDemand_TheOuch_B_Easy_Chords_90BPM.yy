@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"FansDemand_TheOuch_B_Easy_Chords_90BPM",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":16.039185,
+  "name":"FansDemand_TheOuch_B_Easy_Chords_90BPM",
+  "parent":{
+    "name":"Bard B",
+    "path":"folders/Sounds/Bard B.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"FansDemand_TheOuch_B_Easy_Chords_90BPM.mp3",
+  "type":0,
+  "volume":1.0,
+}
