@@ -44,14 +44,19 @@ for (var i = 1; i < string_length(music_data.music); i ++){
 show_debug_message("notes: " + string(instance_number(obj_note)))
 
 player = {
-	x : 144,
+	x : CAM_W + 144,
 	y : CAM_H,
 }
 
 enemy = {
 	x : CAM_W/2,
-	y : 200,
+	y : 0,
 	sprite_index : spr_peasant_coffin,
+}
+
+bar = {
+	x : -144,
+	y : 10,
 }
 
 enum e_rhythm_game {play, success, fail}
@@ -59,3 +64,4 @@ enum e_rhythm_game {play, success, fail}
 state = e_rhythm_game.play;
 
 player.juice = set_player_juice();
+enemy.juice = set_enemy_juice();

@@ -51,6 +51,8 @@
   },
   "name":"lords_of_midnight_converted",
   "resources":[
+    {"id":{"name":"enemyJuiceIn","path":"animcurves/enemyJuiceIn/enemyJuiceIn.yy",},},
+    {"id":{"name":"enemyJuiceOut","path":"animcurves/enemyJuiceOut/enemyJuiceOut.yy",},},
     {"id":{"name":"noteFail","path":"animcurves/noteFail/noteFail.yy",},},
     {"id":{"name":"noteSuccess","path":"animcurves/noteSuccess/noteSuccess.yy",},},
     {"id":{"name":"playerJuiceIn","path":"animcurves/playerJuiceIn/playerJuiceIn.yy",},},
@@ -82,6 +84,7 @@
     {"id":{"name":"scr_init","path":"scripts/scr_init/scr_init.yy",},},
     {"id":{"name":"scr_update_view_grid","path":"scripts/scr_update_view_grid/scr_update_view_grid.yy",},},
     {"id":{"name":"set_player_juice","path":"scripts/set_player_juice/set_player_juice.yy",},},
+    {"id":{"name":"set_enemy_juice","path":"scripts/set_enemy_juice/set_enemy_juice.yy",},},
     {"id":{"name":"start_metronome","path":"scripts/start_metronome/start_metronome.yy",},},
     {"id":{"name":"FansDemand_TheOuch_A_Easy_Chords_90BPM","path":"sounds/FansDemand_TheOuch_A_Easy_Chords_90BPM/FansDemand_TheOuch_A_Easy_Chords_90BPM.yy",},},
     {"id":{"name":"FansDemand_TheOuch_A1_Easy_Fails_90BPM_Banjo","path":"sounds/FansDemand_TheOuch_A1_Easy_Fails_90BPM_Banjo/FansDemand_TheOuch_A1_Easy_Fails_90BPM_Banjo.yy",},},

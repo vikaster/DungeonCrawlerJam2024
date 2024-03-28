@@ -29,10 +29,13 @@ if (array_length(unplayed_notes) > 0){
 //Juice
 if (player.juice.timer <= 1){
 	player.x = CAM_W + animcurve_channel_evaluate(player.juice.channel_x, player.juice.timer);
+	enemy.y = animcurve_channel_evaluate(enemy.juice.channel_y, enemy.juice.timer) + 200;
+	bar.x = 10 - animcurve_channel_evaluate(player.juice.channel_x, player.juice.timer);
 	
 	player.juice.timer += player.juice.inc;	
+	enemy.juice.timer += enemy.juice.inc;	
 	
-	show_debug_message("player.juice.timer: " + string(player.juice.timer))
+	show_debug_message("enemy.juyice: " + string(enemy.y))
 }else{
 	if (state == e_rhythm_game.success){
 		cleanup_battle();	
