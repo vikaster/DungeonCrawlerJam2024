@@ -55,6 +55,7 @@ function note_fail(_note){
 
 	with oEmpty{
 		if (global.player.confidence.current == 0){
+			lost_battle = true;
 			battle_lost();
 		}
 	}
