@@ -14,3 +14,7 @@ global.music_data = [
 	 success : FansDemand_TheOuch_A1_Easy_Success_90BPM_Banjo,
 	 music : "000000010011000101010001011100010001010100000001"}
 ]
+
+enum e_game {title, play, battle};
+
+global.game_state = e_game.title;

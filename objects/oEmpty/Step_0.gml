@@ -35,7 +35,7 @@ if (player.juice.timer <= 1){
 	player.juice.timer += player.juice.inc;	
 	enemy.juice.timer += enemy.juice.inc;	
 	
-	show_debug_message("enemy.juyice: " + string(enemy.y))
+	//show_debug_message("enemy.juyice: " + string(enemy.y))
 }else{
 	if (state == e_rhythm_game.success){
 		cleanup_battle();	

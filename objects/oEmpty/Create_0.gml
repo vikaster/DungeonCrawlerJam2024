@@ -29,6 +29,11 @@ left = (CAM_W/2) - 16//camera_get_view_width(view_camera[0]) - 42;
 right = left + 32;
 
 difficulty = 8; //Higher = easier
+note_tracker = {
+	success : 0,
+	fail : 0,
+	percentage : 0,
+}
 
 for (var i = 1; i < string_length(music_data.music); i ++){
 	if (string_char_at(music_data.music, i) == "1"){

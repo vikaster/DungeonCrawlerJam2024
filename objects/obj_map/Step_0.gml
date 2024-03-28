@@ -25,10 +25,12 @@ if (instance_number(obj_transition_parent) == 0){
 	//if (keyboard_check_pressed(vk_f5) ) game_restart();
 	
 	if (keyboard_check_pressed(vk_space)){
+		start_metronome(180, 8, oEmpty);
+		global.game_state = e_game.battle;
 		//with(obj_rhythm) instance_destroy();
-		if (!instance_exists(obj_rhythm)){
-			instance_create_layer(0,0,"Rhythm_bg", obj_rhythm);	
-		}
+		//if (!instance_exists(obj_rhythm)){
+		//	instance_create_layer(0,0,"Rhythm_bg", obj_rhythm);	
+		//}
 	}
 
 }else{
