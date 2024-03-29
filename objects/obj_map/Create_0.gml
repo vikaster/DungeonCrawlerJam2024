@@ -1,17 +1,32 @@
-terrain = load_csv("lom_landscape_example.csv");
+terrain = [];//load_csv("lom_landscape_example.csv");
+visual_grid = [];
+
+#region FILL TERRAIN
+
+map_w = room_width div 8;
+map_h = room_height div 8;
+
+var _lay_id = layer_get_id("terrain");
+var _terrain_map_id = layer_tilemap_get_id(_lay_id);
+
+for (var yy = 0; yy < map_h; yy ++){
+	for (var xx = 0; xx < map_w; xx ++){
+		terrain[xx][yy] = tilemap_get(_terrain_map_id, xx, yy);	
+		visual_grid[xx][yy] = terrain[xx][yy];
+	}
+}
+
+#endregion
 
 terrain_that_blocks_movement = [3]; //just mountaints for now
 
-show_debug_message("w: " + string(ds_grid_width(terrain)) );
-show_debug_message("h: " + string(ds_grid_height(terrain)) );
+//show_debug_message("w: " + string(ds_grid_width(terrain)) );
+//show_debug_message("h: " + string(ds_grid_height(terrain)) );
 
-grid_x = 6;
-grid_y = 8;
+grid_x = objPlayer.x div 8;//6;
+grid_y = objPlayer.y div 8;//8;
 visual_grid_x = grid_x;
 visual_grid_y = grid_y;
-
-map_w = ds_grid_width(terrain);
-map_h = ds_grid_height(terrain);
 
 stored_move = undefined;
 
@@ -36,8 +51,8 @@ terrain_sprites[7] = spr_city;
 terrain_sprites[8] = spr_fortress;
 terrain_sprites[9] = spr_tower;
 
-visual_grid = ds_grid_create(ds_grid_width(terrain), ds_grid_height(terrain) );
-ds_grid_copy(visual_grid, terrain);
+//visual_grid = ds_grid_create(ds_grid_width(terrain), ds_grid_height(terrain) );
+//ds_grid_copy(visual_grid, terrain);
 
 enum e_compass{
 	north,

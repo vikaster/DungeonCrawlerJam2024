@@ -8,8 +8,8 @@ for (var yy = gy - y_dist; yy < gy; yy ++){
 	//show_debug_message("");
 
 	for (var xx = gx - y_dist; xx <= gx + y_dist; xx ++){
-		if (xx >= 0 && gy > 0 && xx < ds_grid_width(obj_map.visual_grid) && yy >= 0 && yy < ds_grid_height(obj_map.visual_grid) ){
-			var ind = real(string_digits(obj_map.visual_grid[# xx, yy]));
+		if (xx >= 0 && gy > 0 && xx < obj_map.map_w && yy >= 0 && yy < obj_map.map_h ){
+			var ind = obj_map.visual_grid[xx][yy];
 			var spr = obj_map.terrain_sprites[ ind ];
 		}else spr = spr_frozen;
 		

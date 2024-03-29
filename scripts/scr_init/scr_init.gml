@@ -22,3 +22,11 @@ global.music_data = [
 enum e_game {title, play, battle};
 
 global.game_state = e_game.title;
+
+global.data = {
+	text_ids : {
+		one : {title : "Journal", text : "Before her, the stage was inevitable. With her, the stage was a paradise. Now that she is gone, the stage has become a slaughterhouse…"},
+		two : {title : "Sense", text : "Sore fingers, calloused by overwork, and overplay... A stinging satisfaction."},
+		three : {title : "Image", text : "A bright sun muscles through the drawn curtains of a music studio as it sinks down the sky. Mahogany shimmers in its light until the horizon crushes it like goldleaf. All is gray once more. The perfect time to compose…"},
+	}
+}

@@ -8,7 +8,7 @@ function go_forward(){
 		exit;
 	}
 	
-	var _terrain = terrain[# grid_x + a_gridxy[compass_point][0], grid_y + a_gridxy[compass_point][1]];
+	var _terrain = terrain[grid_x + a_gridxy[compass_point][0]][grid_y + a_gridxy[compass_point][1]];
 	if (array_get_index(terrain_that_blocks_movement, _terrain) != -1){
 		//Movement Blocked
 		exit;
@@ -35,9 +35,9 @@ function go_forward(){
 			var debug = "";
 			//show_debug_message("y_dist: " + string(y_dist) );
 			for (var xx = other.visual_grid_x - y_dist; xx <= other.visual_grid_x + y_dist; xx ++){
-				if (xx >= 0 && xx < ds_grid_width(other.visual_grid) && yy >= 0 && yy < ds_grid_height(other.visual_grid)){
+				if (xx >= 0 && xx < other.map_w && yy >= 0 && yy < other.map_h){
 							
-					var spr = other.visual_grid[# xx, yy];
+					var spr = other.visual_grid[xx][yy];
 							
 				}else spr = spr_frozen;
 						
@@ -57,10 +57,10 @@ function go_forward(){
 	grid_y += a_gridxy[compass_point, 1];	
 	
 	visual_grid_y --;
-	visual_grid_y = clamp(visual_grid_y, 0, ds_grid_height(visual_grid) - 1 );
+	visual_grid_y = clamp(visual_grid_y, 0, map_h - 1 );
 	
-	grid_x = clamp(grid_x, 0, ds_grid_width(terrain) - 1 );
-	grid_y = clamp(grid_y, 0, ds_grid_height(terrain) - 1);
+	grid_x = clamp(grid_x, 0, map_w - 1 );
+	grid_y = clamp(grid_y, 0, map_h - 1);
 }
 
 function go_back(){
@@ -71,7 +71,7 @@ function go_back(){
 		exit;
 	}
 	
-	var _terrain = terrain[# grid_x + a_gridxy[compass_point][0], grid_y + a_gridxy[compass_point][1]];
+	var _terrain = terrain[grid_x + a_gridxy[compass_point][0]][grid_y + a_gridxy[compass_point][1]];
 	if (array_get_index(terrain_that_blocks_movement, _terrain) != -1){
 		//Movement Blocked
 		exit;
@@ -91,11 +91,11 @@ function go_back(){
 	grid_x += a_gridxy[compass_point, 0];
 	grid_y -= a_gridxy[compass_point, 1];
 	
-	grid_x = clamp(grid_x, 0, ds_grid_width(terrain) - 1 );
-	grid_y = clamp(grid_y, 0, ds_grid_height(terrain) - 1 );
+	grid_x = clamp(grid_x, 0, map_w - 1 );
+	grid_y = clamp(grid_y, 0, map_h - 1 );
 	
 	visual_grid_y ++;
-	visual_grid_y = clamp(visual_grid_y, 0, ds_grid_height(visual_grid) - 1 );
+	visual_grid_y = clamp(visual_grid_y, 0, map_h - 1 );
 }
 
 function turn_left(){

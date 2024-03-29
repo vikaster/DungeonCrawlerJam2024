@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"parNpc",
+  "%Name":"objPlayer",
   "eventList":[],
   "managed":true,
-  "name":"parNpc",
+  "name":"objPlayer",
   "overriddenProperties":[],
   "parent":{
     "name":"Actors",
@@ -23,15 +23,13 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"","%Name":"npc_id","filters":[],"listItems":[],"multiselect":false,"name":"npc_id","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"default\"","varType":2,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprNpc",
-    "path":"sprites/sprNpc/sprNpc.yy",
+    "name":"sprPlayer",
+    "path":"sprites/sprPlayer/sprPlayer.yy",
   },
   "spriteMaskId":null,
   "visible":true,

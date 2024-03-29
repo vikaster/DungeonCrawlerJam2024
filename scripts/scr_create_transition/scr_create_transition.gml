@@ -30,8 +30,8 @@ function scr_create_transition(){
 			
 				for (var xx = start_x; xx <= end_x; xx ++){
 				
-					if (yy >= 0 && yy < ds_grid_height(other.visual_grid) && xx >= 0 && xx < ds_grid_width(other.visual_grid) ){
-						var ind = real(string_digits(other.visual_grid[# xx, yy]));
+					if (yy >= 0 && yy < other.map_h && xx >= 0 && xx < other.map_w ){
+						var ind = other.visual_grid[xx][yy];
 						var spr = other.terrain_sprites[ ind ];
 					}else spr = spr_frozen;
 
@@ -49,8 +49,8 @@ function scr_create_transition(){
 			
 				for (var yy = start_y; yy <= end_y; yy ++){
 				
-					if (yy >= 0 && yy < ds_grid_height(other.visual_grid) && xx >= 0 && xx < ds_grid_width(other.visual_grid) ){
-						var ind = real(string_digits(other.visual_grid[# xx, yy]));
+					if (yy >= 0 && yy < other.map_h && xx >= 0 && xx < other.map_w ){
+						var ind = other.visual_grid[xx][yy];
 						var spr = other.terrain_sprites[ ind ];
 					}else spr = spr_frozen;
 				
@@ -76,8 +76,8 @@ function scr_create_transition(){
 				var end_y = other.visual_grid_y - y_dist;
 			
 				for (var yy = start_y; yy >= end_y; yy --){
-					if (yy >= 0 && yy < ds_grid_height(other.visual_grid) && xx >= 0 && xx < ds_grid_width(other.visual_grid) ){
-						var ind = real(string_digits(other.visual_grid[# xx, yy]));
+					if (yy >= 0 && yy < other.map_h && xx >= 0 && xx < other.map_w ){
+						var ind = other.visual_grid[xx][yy];
 						var spr = other.terrain_sprites[ ind ];
 					}else spr = spr_frozen;	
 				
@@ -93,8 +93,8 @@ function scr_create_transition(){
 				var end_x = other.visual_grid_x + y_dist;
 			
 				for (var xx = start_x; xx <= end_x; xx ++){
-					if (yy >= 0 && yy < ds_grid_height(other.visual_grid) && xx >= 0 && xx < ds_grid_width(other.visual_grid) ){
-						var ind = real(string_digits(other.visual_grid[# xx, yy]));
+					if (yy >= 0 && yy < other.map_h && xx >= 0 && xx < other.map_w ){
+						var ind = other.visual_grid[xx][yy];
 						var spr = other.terrain_sprites[ ind ];
 					}else spr = spr_frozen;	
 				
