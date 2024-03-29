@@ -3,6 +3,7 @@ if (instance_number(obj_transition_parent) == 0){
 	if (stored_move != undefined){
 		stored_move();
 		stored_move = undefined;
+		show_debug_message("running stored move")
 		exit;
 	}
 
@@ -10,7 +11,7 @@ if (instance_number(obj_transition_parent) == 0){
 		go_forward();
 	}
 
-	if (keyboard_check(ord("S"))){
+	if (keyboard_check_pressed(ord("S"))){
 		go_back();
 	}
 
@@ -25,9 +26,13 @@ if (instance_number(obj_transition_parent) == 0){
 	//if (keyboard_check_pressed(vk_f5) ) game_restart();
 	
 	if (keyboard_check_pressed(vk_space)){
-		with(obj_rhythm) instance_destroy();
-		instance_create_layer(0,0,"Notes", obj_rhythm);	
+		start_battle();
 	}
+	
+	//if (keyboard_check_pressed(vk_backspace)){
+	//	terrain[# grid_x + a_gridxy[compass_point][0], grid_y + a_gridxy[compass_point][1]] = irandom(e_terrain.last - 1);
+	//	scr_update_view_grid();
+	//}
 
 }else{
 	//show_debug_message("instance_number(obj_transition_parent) > 0")

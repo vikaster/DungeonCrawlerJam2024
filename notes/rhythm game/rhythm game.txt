@@ -1,0 +1,19 @@
+Spawn notes BEFORE the music gets to them
+
+- Choose how long the player has to react. EG 2 seconds.
+- Calculate how long the note takes to get to the middle point based on its speed. (Speed can be changed)
+- How to know when a note is coming up in the future?
+
+
+
+Possible Solution 1
+- Create as many notes as needed at the start, offscreen.
+- Let each note know by what beat it should arrive in the center by
+- Its x position should be based on that (using lerp?)
+
+
+
+[IMPROVED POSITIONING]
+Difference in beat from 0 should affect how far to the left from 0 that they spawn
+They should then travel at a fixed speed per beat.
+How do I keep the notes in sync with the beats if I do it like that though?

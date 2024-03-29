@@ -1,5 +1,3 @@
-show_debug_message("note created");
-
 success = {
 	inc : 0.05,
 	timer : 0,
@@ -16,3 +14,7 @@ fail = {
 curve_data = undefined;
 grav = 2;
 on_done = undefined;
+
+start_x = x;
+
+if (instance_number(obj_note) == 1) show_debug_message("start_x for " + string(my_beat) + ": " + string(start_x))

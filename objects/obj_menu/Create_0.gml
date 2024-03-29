@@ -28,4 +28,6 @@ ds_menu_main = create_menu_page(["RESUME", menu_element_type.script_runner, "res
 	["AUDIO", menu_element_type.page_transfer, menu_page.audio]
 )
 
-show_debug_message(string(ds_menu_main))
+//show_debug_message(string(ds_menu_main));
+
+display_set_gui_size(room_width, room_height);

@@ -1,0 +1,30 @@
+{
+  "$GMSound":"",
+  "%Name":"sndMetronomeLow",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":320,
+  "compression":0,
+  "ConfigValues":{
+    "DEV":{
+      "audioGroupId":"{\"name\":\"audiogroup_default\",\"path\":\"audiogroups/audiogroup_default\"}",
+    },
+  },
+  "conversionMode":0,
+  "duration":0.115011,
+  "name":"sndMetronomeLow",
+  "parent":{
+    "name":"AUDIO",
+    "path":"folders/BPM/AUDIO.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sndMetronomeLow",
+  "type":0,
+  "volume":0.41,
+}

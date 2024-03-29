@@ -7,6 +7,12 @@ function go_forward(){
 		//Movement BLocked
 		exit;
 	}
+	
+	var _terrain = terrain[# grid_x + a_gridxy[compass_point][0], grid_y + a_gridxy[compass_point][1]];
+	if (array_get_index(terrain_that_blocks_movement, _terrain) != -1){
+		//Movement Blocked
+		exit;
+	}
 		
 	/*
 		########### v               11  (5) (y_dist * 2) + 1
@@ -64,6 +70,24 @@ function go_back(){
 		//Movement BLocked
 		exit;
 	}
+	
+	var _terrain = terrain[# grid_x + a_gridxy[compass_point][0], grid_y + a_gridxy[compass_point][1]];
+	if (array_get_index(terrain_that_blocks_movement, _terrain) != -1){
+		//Movement Blocked
+		exit;
+	}
+	
+	/*
+		grid_x += a_gridxy[compass_point, 0];
+		grid_y -= a_gridxy[compass_point, 1];
+	
+		grid_x = clamp(grid_x, 0, ds_grid_width(terrain) - 1 );
+		grid_y = clamp(grid_y, 0, ds_grid_height(terrain) - 1 );
+	
+		visual_grid_y ++;
+		visual_grid_y = clamp(visual_grid_y, 0, ds_grid_height(visual_grid) - 1 );
+		*/
+	
 	grid_x += a_gridxy[compass_point, 0];
 	grid_y -= a_gridxy[compass_point, 1];
 	
@@ -82,6 +106,7 @@ function turn_left(){
 	transition_sideways = 1;
 	show_debug_message("transition_sideways: " + string(transition_sideways));
 	scr_update_view_grid();	
+	scr_create_transition();
 }
 
 function turn_right(){
@@ -91,4 +116,5 @@ function turn_right(){
 	transition_sideways = -1;
 	show_debug_message("transition_sideways: " + string(transition_sideways));
 	scr_update_view_grid();	
+	scr_create_transition();
 }
