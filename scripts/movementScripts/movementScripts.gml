@@ -37,7 +37,7 @@ function go_forward(){
 			for (var xx = other.visual_grid_x - y_dist; xx <= other.visual_grid_x + y_dist; xx ++){
 				if (xx >= 0 && xx < other.map_w && yy >= 0 && yy < other.map_h){
 							
-					var spr = other.visual_grid[xx][yy];
+					var spr = other.visual_grid[xx][yy].terrain_index;
 							
 				}else spr = spr_frozen;
 						
@@ -73,7 +73,7 @@ function go_back(){
 		exit;
 	}
 	
-	var _terrain = terrain[grid_x + a_gridxy[compass_point][0]][grid_y + a_gridxy[compass_point][1]];
+	var _terrain = terrain[grid_x + a_gridxy[compass_point][0]][grid_y + a_gridxy[compass_point][1]].terrain_index;
 	if (array_get_index(terrain_that_blocks_movement, _terrain) != -1){
 		//Movement Blocked
 		show_debug_message("movement backwards blocked by terrain")

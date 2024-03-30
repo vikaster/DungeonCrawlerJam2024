@@ -29,7 +29,7 @@ function scr_create_transition(){
 				for (var xx = start_x; xx <= end_x; xx ++){
 				
 					if (yy >= 0 && yy < array_length(other.visual_grid) && xx >= 0 && xx < array_length(other.visual_grid) ){
-						var ind = other.visual_grid[xx][yy];
+						var ind = other.visual_grid[xx][yy].terrain_index;
 						var spr = other.terrain_sprites[ ind ];
 					}else spr = spr_frozen;
 
@@ -48,7 +48,7 @@ function scr_create_transition(){
 				for (var yy = start_y; yy <= end_y; yy ++){
 				
 					if (yy >= 0 && yy < array_length(other.visual_grid) && xx >= 0 && xx < array_length(other.visual_grid) ){
-						var ind = other.visual_grid[xx][yy];
+						var ind = other.visual_grid[xx][yy].terrain_index;
 						var spr = other.terrain_sprites[ ind ];
 					}else spr = spr_frozen;
 				
@@ -75,7 +75,7 @@ function scr_create_transition(){
 			
 				for (var yy = start_y; yy >= end_y; yy --){
 					if (yy >= 0 && yy < array_length(other.visual_grid) && xx >= 0 && xx < array_length(other.visual_grid) ){
-						var ind = other.visual_grid[xx][yy];
+						var ind = other.visual_grid[xx][yy].terrain_index;
 						var spr = other.terrain_sprites[ ind ];
 					}else spr = spr_frozen;	
 				
@@ -92,7 +92,7 @@ function scr_create_transition(){
 			
 				for (var xx = start_x; xx <= end_x; xx ++){
 					if (yy >= 0 && yy < array_length(other.visual_grid) && xx >= 0 && xx < array_length(other.visual_grid) ){
-						var ind = other.visual_grid[xx][yy];
+						var ind = other.visual_grid[xx][yy].terrain_index;
 						var spr = other.terrain_sprites[ ind ];
 					}else spr = spr_frozen;	
 				

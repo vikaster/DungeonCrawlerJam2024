@@ -19,7 +19,7 @@ if (instance_number(obj_transition_parent) == 0){
 
 		for (var xx = visual_grid_x - y_dist; xx <= visual_grid_x + y_dist; xx ++){
 			if (xx >= 0 && visual_grid_y > 0 && xx < array_length(visual_grid) && yy >= 0 && yy < array_length(visual_grid) ){
-				var ind = visual_grid[xx][yy];
+				var ind = visual_grid[xx][yy].terrain_index;
 				var spr = terrain_sprites[ ind ];
 			}else spr = spr_frozen;
 		

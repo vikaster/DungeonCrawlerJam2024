@@ -9,7 +9,7 @@ for (var yy = gy - y_dist; yy < gy; yy ++){
 
 	for (var xx = gx - y_dist; xx <= gx + y_dist; xx ++){
 		if (xx >= 0 && gy > 0 && xx < array_length(obj_map.visual_grid) && yy >= 0 && yy < array_length(obj_map.visual_grid) ){
-			var ind = obj_map.visual_grid[xx][yy];
+			var ind = obj_map.visual_grid[xx][yy].terrain_index;
 			var spr = obj_map.terrain_sprites[ ind ];
 		}else spr = spr_frozen;
 		

@@ -12,17 +12,18 @@ map_h = room_height div global.cell_size;
 
 for (var yy = 0; yy < map_h; yy ++){
 	for (var xx = 0; xx < map_w; xx ++){
-		terrain[xx][yy] = {terrain : tilemap_get(_terrain_map_id, xx, yy)};	
+		terrain[xx][yy] = {terrain_index : tilemap_get(_terrain_map_id, xx, yy)};	
 		visual_grid[xx][yy] = terrain[xx][yy];
 	}
 }
 
 with parActor{
 	terrain[x div global.cell_size][y div global.cell_size].actor = id;
-	sprite_index = struct_get(
+	my_data = struct_get(global.data, my_id);
+	sprite_index = struct_get(my_data, "sprite_index");
 }
 
-show_debug_message("map_w: " + string(map_w) + " | map_h: " + string(map_h) + " | array_length(terrain): " + string(array_length(terrain)))
+//show_debug_message("map_w: " + string(map_w) + " | map_h: " + string(map_h) + " | array_length(terrain): " + string(array_length(terrain)))
 
 //for (var yy = 0; yy < ds_grid_height(_csv); yy ++){
 //	for (var xx = 0; xx < ds_grid_width(_csv); xx ++){
