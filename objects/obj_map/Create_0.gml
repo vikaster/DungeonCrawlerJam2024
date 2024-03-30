@@ -1,4 +1,20 @@
 //var _csv = load_csv("lom_landscape_example.csv");
+
+enum e_terrain{
+	plains,
+	forest,
+	downs,
+	mountains,
+	last,
+}
+
+enum e_compass{
+	north,
+	east,
+	south,
+	west,
+	last,
+}
 terrain = [];
 visual_grid = [];
 
@@ -18,9 +34,18 @@ for (var yy = 0; yy < map_h; yy ++){
 }
 
 with parActor{
-	terrain[x div global.cell_size][y div global.cell_size].actor = id;
+	if (x < 0 || x > room_width || y < 0 || y > room_height) continue;
+	var _cell_x = floor(x / global.cell_size);
+	var _cell_y = floor(y / global.cell_size);
+	show_debug_message("_cell_x: " + string(_cell_x) + " | _cell_y: " + string(_cell_y));
+	show_debug_message("other.terrain[_cell_x][_cell_y]: " + string(other.terrain[_cell_x][_cell_y]))
+	other.terrain[_cell_x][_cell_y].actor = id;
 	my_data = struct_get(global.data, my_id);
-	sprite_index = struct_get(my_data, "sprite_index");
+	if (my_data != undefined){
+		sprite_index = struct_get(my_data, "sprite_index");
+	}else{
+		show_debug_message("No data for " + object_get_name(object_index) + " at " + string(_cell_x) + "," + string(_cell_y))	
+	}
 }
 
 //show_debug_message("map_w: " + string(map_w) + " | map_h: " + string(map_h) + " | array_length(terrain): " + string(array_length(terrain)))
