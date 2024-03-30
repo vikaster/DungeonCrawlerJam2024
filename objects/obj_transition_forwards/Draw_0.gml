@@ -13,14 +13,16 @@ for (var yy = gy - y_dist; yy < gy; yy ++){
 			var spr = obj_map.terrain_sprites[ ind ];
 		}else spr = spr_frozen;
 		
-		var w = room_width / (1 + (y_dist * 2) );
+		//var w = room_width / (1 + (y_dist * 2) );
+		var w = CAM_W / (1 + (y_dist * 2) );
 		var scale = w/128;
 		var new_scale = scale + ( ((a_pixels_per_step[y_dist, 1] - scale) / 30) * move_y );
 		var h = 10 * new_scale;
 
 		var new_w = 128 * new_scale;
 
-		var start_x = (room_width / 2) - (y_dist * new_w);
+		//var start_x = (room_width / 2) - (y_dist * new_w);
+		var start_x = (CAM_W / 2) - (y_dist * new_w);
 		var draw_x = start_x + (new_w * x_count);
 		var draw_y = 144 + (y_count * h);
 		var prev_draw_y = (144 + ( y_count * (10 * scale) ) )

@@ -28,6 +28,8 @@ grid_y = objPlayer.y div 8;//8;
 visual_grid_x = grid_x;
 visual_grid_y = grid_y;
 
+show_debug_message("grid_x: " + string(grid_x) + " | grid_y: " + string(grid_y))
+
 stored_move = undefined;
 
 enum e_terrain{

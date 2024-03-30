@@ -1,9 +1,7 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_create_transition(){
 	#region CREATE OBJECT TO TRANSITION TURNING
 
-	ins = instance_create_depth(-(sprite_get_width(spr_forest) * 2), 144, - 1, obj_transition_sideways );
+	ins = instance_create_depth(-(sprite_get_width(spr_forest) * 2), 144, -1, obj_transition_sideways );
 
 	with (ins){
 	

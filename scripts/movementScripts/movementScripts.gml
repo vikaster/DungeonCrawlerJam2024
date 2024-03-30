@@ -46,21 +46,23 @@ function go_forward(){
 				x_count ++;
 			}
 			y_dist --;
-			show_debug_message(debug);
+			show_debug_message("debug: " + debug);
 		}
 				
 		gx = other.visual_grid_x;
 		gy = other.visual_grid_y;
 	}
 		
-	grid_x += a_gridxy[compass_point, 0];
-	grid_y += a_gridxy[compass_point, 1];	
+	//grid_x += a_gridxy[compass_point, 0];
+	//grid_y += a_gridxy[compass_point, 1];	
 	
-	visual_grid_y --;
-	visual_grid_y = clamp(visual_grid_y, 0, map_h - 1 );
+	//visual_grid_y --;
+	visual_grid_y = clamp(visual_grid_y - 1, 0, map_h - 1 );
 	
-	grid_x = clamp(grid_x, 0, map_w - 1 );
-	grid_y = clamp(grid_y, 0, map_h - 1);
+	grid_x = clamp(grid_x + a_gridxy[compass_point, 0], 0, map_w - 1 );
+	grid_y = clamp(grid_y + a_gridxy[compass_point, 1], 0, map_h - 1);
+	
+	show_debug_message("grid_x: " + string(grid_x) + " | grid_y: " + string(grid_y) + " | visual_grid_y: " + string(visual_grid_y));
 }
 
 function go_back(){
@@ -88,14 +90,16 @@ function go_back(){
 		visual_grid_y = clamp(visual_grid_y, 0, ds_grid_height(visual_grid) - 1 );
 		*/
 	
-	grid_x += a_gridxy[compass_point, 0];
-	grid_y -= a_gridxy[compass_point, 1];
+	//grid_x += a_gridxy[compass_point, 0];
+	//grid_y -= a_gridxy[compass_point, 1];
 	
-	grid_x = clamp(grid_x, 0, map_w - 1 );
-	grid_y = clamp(grid_y, 0, map_h - 1 );
+	grid_x = clamp(grid_x + a_gridxy[compass_point, 0], 0, map_w - 1 );
+	grid_y = clamp(grid_y - a_gridxy[compass_point, 1], 0, map_h - 1 );
 	
-	visual_grid_y ++;
-	visual_grid_y = clamp(visual_grid_y, 0, map_h - 1 );
+	//visual_grid_y ++;
+	visual_grid_y = clamp(visual_grid_y + 1, 0, map_h - 1 );
+	
+	show_debug_message("grid_x: " + string(grid_x) + " | grid_y: " + string(grid_y) + " | visual_grid_y: " + string(visual_grid_y));
 }
 
 function turn_left(){

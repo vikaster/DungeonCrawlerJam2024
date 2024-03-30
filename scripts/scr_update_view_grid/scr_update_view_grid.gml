@@ -59,7 +59,7 @@ function scr_update_view_grid() {
 	}
 
 	if (compass_point == e_compass.west){
-	
+		
 	#region WEST
 	
 		var y_count = map_h - 1;

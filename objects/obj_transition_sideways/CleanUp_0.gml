@@ -7,7 +7,7 @@ for (var i = 4; i >= 1; i --){
 	
 	var str = "";
 	for (var j = 0; j < ds_list_size(list); j ++){	
-		str += string(list[| j]);
+		str += " | spr_" + string_digits(string(list[| j]));
 	}
 	show_debug_message(str);	
 	ds_list_destroy(list);
