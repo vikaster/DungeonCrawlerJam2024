@@ -39,10 +39,11 @@ with parActor{
 	var _cell_y = floor(y / global.cell_size);
 	show_debug_message("_cell_x: " + string(_cell_x) + " | _cell_y: " + string(_cell_y));
 	show_debug_message("other.terrain[_cell_x][_cell_y]: " + string(other.terrain[_cell_x][_cell_y]))
-	other.terrain[_cell_x][_cell_y].actor = id;
+	other.terrain[_cell_x][_cell_y].actor = id; show_debug_message("other.terrain[_cell_x][_cell_y].actor: " + string(other.terrain[_cell_x][_cell_y].actor))
 	my_data = struct_get(global.data, my_id);
 	if (my_data != undefined){
-		sprite_index = struct_get(my_data, "sprite_index");
+		show_debug_message("Found data for " + my_id + " | data: " + string(my_data) + " | sprite: " + sprite_get_name(my_data.sprite_index))
+		//sprite_index = struct_get(my_data, "sprite_index");
 	}else{
 		show_debug_message("No data for " + object_get_name(object_index) + " at " + string(_cell_x) + "," + string(_cell_y))	
 	}
@@ -61,8 +62,8 @@ with parActor{
 //show_debug_message("w: " + string(ds_grid_width(_csv)) );
 //show_debug_message("h: " + string(ds_grid_height(_csv)) );
 
-grid_x = 6;
-grid_y = 8;
+grid_x = floor(objPlayer.x / global.cell_size)//6;
+grid_y = floor(objPlayer.y / global.cell_size)//8;
 visual_grid_x = grid_x;
 visual_grid_y = grid_y;
 

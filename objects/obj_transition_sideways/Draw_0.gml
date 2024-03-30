@@ -27,9 +27,14 @@ for (var y_dist = 4; y_dist >= 1; y_dist --){
 		else var draw_x = (w/2) - ( ( y_dist * 2) * (w) ) + (xx * w)
 		var draw_y = 144 + (y_count * h);
 
-		spr = list[| x_count];
+		var _map_data = list[| x_count];
+		if (_map_data == undefined) continue;
+		
+		show_debug_message("_map_data:"  + string(_map_data))
+		var _spr = obj_map.terrain_sprites[_map_data.terrain_index];
 
-		draw_sprite_ext(spr, 0, draw_x + ( moved * (a_move_distance[y_dist]) ), draw_y, scale, scale, 0, c_white, 1);
+		draw_sprite_ext(_spr, 0, draw_x + ( moved * (a_move_distance[y_dist]) ), draw_y, scale, scale, 0, c_white, 1);
+		draw_actor(_map_data, draw_x + ( moved * (a_move_distance[y_dist]) ), draw_y, scale)
 		
 		//DEBUG
 		//draw_set_halign(fa_left);

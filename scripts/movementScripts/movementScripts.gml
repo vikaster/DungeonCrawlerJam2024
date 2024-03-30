@@ -8,7 +8,7 @@ function go_forward(){
 		exit;
 	}
 	
-	var _terrain = terrain[grid_x + a_gridxy[compass_point][0]][grid_y + a_gridxy[compass_point][1]];
+	var _terrain = terrain[grid_x + a_gridxy[compass_point][0]][grid_y + a_gridxy[compass_point][1]].terrain_index;
 	if (array_get_index(terrain_that_blocks_movement, _terrain) != -1){
 		//Movement Blocked
 		exit;
@@ -38,11 +38,11 @@ function go_forward(){
 				if (xx >= 0 && xx < other.map_w && yy >= 0 && yy < other.map_h){
 							
 					var spr = other.visual_grid[xx][yy].terrain_index;
-							
-				}else spr = spr_frozen;
+					var _data = other.visual_grid[xx][yy]	
+				}else _data = undefined;
 						
-				list[| x_count] = spr;
-				debug += string(spr);
+				list[| x_count] = _data//spr;
+				//debug += string(spr);
 				x_count ++;
 			}
 			y_dist --;

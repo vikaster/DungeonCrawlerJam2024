@@ -11,7 +11,9 @@ for (var yy = gy - y_dist; yy < gy; yy ++){
 		if (xx >= 0 && gy > 0 && xx < array_length(obj_map.visual_grid) && yy >= 0 && yy < array_length(obj_map.visual_grid) ){
 			var ind = obj_map.visual_grid[xx][yy].terrain_index;
 			var spr = obj_map.terrain_sprites[ ind ];
-		}else spr = spr_frozen;
+		}else spr = -1;
+		
+		if (spr == -1) continue;
 		
 		var w = CAM_W / (1 + (y_dist * 2) );
 		var scale = w/128;
@@ -28,10 +30,11 @@ for (var yy = gy - y_dist; yy < gy; yy ++){
 		if (y_dist == 1) alpha = 0.5; else alpha = 1;
 
 		draw_sprite_ext(spr, 0, draw_x, draw_y + (a_pixels_per_step[y_dist, 0] * move_y), new_scale, new_scale, 0, c_white, alpha);
+		draw_actor(obj_map.visual_grid[xx][yy], draw_x, draw_y + (a_pixels_per_step[y_dist, 0] * move_y), new_scale);
 
 		x_count ++;
 	}
-	show_debug_message("scale: " + string(scale) + " | new_scale: " + string(new_scale) + " | prev_draw_y: " + string(prev_draw_y) + " | draw_y: " + string(draw_y));
+	//show_debug_message("scale: " + string(scale) + " | new_scale: " + string(new_scale) + " | prev_draw_y: " + string(prev_draw_y) + " | draw_y: " + string(draw_y));
 	y_dist --
 	y_count ++;
 }

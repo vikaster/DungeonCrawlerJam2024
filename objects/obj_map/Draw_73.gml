@@ -21,7 +21,7 @@ if (instance_number(obj_transition_parent) == 0){
 			if (xx >= 0 && visual_grid_y > 0 && xx < array_length(visual_grid) && yy >= 0 && yy < array_length(visual_grid) ){
 				var ind = visual_grid[xx][yy].terrain_index;
 				var spr = terrain_sprites[ ind ];
-			}else spr = spr_frozen;
+			}else spr = -1;//spr_frozen;
 		
 			//var scale = 1/y_dist;
 			//var w = ((sprite_get_width(spr_forest) / 2) * scale);
@@ -32,7 +32,10 @@ if (instance_number(obj_transition_parent) == 0){
 			var draw_x = w/2 + (x_count * (w));
 			var draw_y = 144 + (y_count * h);
 	
-			draw_sprite_ext(spr, 0, draw_x, draw_y, scale, scale, 0, c_white, 1);
+			if (spr != -1){
+				draw_sprite_ext(spr, 0, draw_x, draw_y, scale, scale, 0, c_white, 1);
+				draw_actor(visual_grid[xx][yy], draw_x, draw_y, scale);
+			}
 	
 			x_count ++;
 		}
