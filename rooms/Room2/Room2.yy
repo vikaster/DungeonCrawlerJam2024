@@ -6,8 +6,13 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
+<<<<<<< Updated upstream:rooms/Room2/Room2.yy
     {"name":"inst_7B681354","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_60B16161","path":"rooms/Room2/Room2.yy",},
+=======
+    {"name":"inst_7B681354","path":"rooms/rm_title_screen/rm_title_screen.yy",},
+    {"name":"inst_60B16161","path":"rooms/rm_title_screen/rm_title_screen.yy",},
+>>>>>>> Stashed changes:rooms/rm_title_screen/rm_title_screen.yy
   ],
   "isDnd":false,
   "layers":[
