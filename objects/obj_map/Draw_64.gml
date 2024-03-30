@@ -51,7 +51,7 @@
 
 
 
-//draw_sprite_ext(spr_compass, 0, display_get_gui_width() - 32, 32, 4, 4, compass_point * -90, c_white, 0.75);
+draw_sprite_ext(spr_compass, 0, display_get_gui_width() - 32, 32, 4, 4, compass_point * -90, c_white, 0.75);
 //var location = obj_main.settlement_grid[# grid_x, grid_y];
 //if (location != noone){
 //	draw_set_halign(fa_left);
