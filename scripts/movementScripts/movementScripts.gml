@@ -67,13 +67,13 @@ function go_forward(){
 
 function go_back(){
 	if (grid_x + a_gridxy[compass_point][0] < 0 || grid_x + a_gridxy[compass_point][0] >= map_w) ||
-		(grid_y + a_gridxy[compass_point][1] < 0 || grid_y + a_gridxy[compass_point][1] >= map_h) {
+		(grid_y + a_gridxy[compass_point][1] < 0 || grid_y - a_gridxy[compass_point][1] >= map_h) {
 			
 		//Movement BLocked
 		exit;
 	}
 	
-	var _terrain = terrain[grid_x + a_gridxy[compass_point][0]][grid_y + a_gridxy[compass_point][1]].terrain_index;
+	var _terrain = terrain[grid_x + a_gridxy[compass_point][0]][grid_y - a_gridxy[compass_point][1]].terrain_index;
 	if (array_get_index(terrain_that_blocks_movement, _terrain) != -1){
 		//Movement Blocked
 		show_debug_message("movement backwards blocked by terrain")
