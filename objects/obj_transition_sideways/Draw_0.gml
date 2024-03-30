@@ -19,9 +19,8 @@ for (var y_dist = 4; y_dist >= 1; y_dist --){
 	var end_x = start_x + ds_list_size(list);
 
 	for (var xx = start_x; xx < end_x; xx ++){
-		//var w = room_width / (1 + (y_dist * 2) );
-		var w = CAM_W / (1 + (y_dist * 2) );
-		var scale = w/128;// show_debug_message(string(y_dist) + " | scale: " + string(scale))
+		var w = room_width / (1 + (y_dist * 2) );
+		var scale = w/128; show_debug_message(string(y_dist) + " | scale: " + string(scale))
 		var h = 10 * scale;
 
 		if (move_dir == -1) var draw_x = w/2 + (xx * (w));
@@ -45,5 +44,5 @@ for (var y_dist = 4; y_dist >= 1; y_dist --){
 	
 	y_count ++;
 	
-	//show_debug_message("y_dist: " + string(y_dist));
+	show_debug_message(y_dist);
 }
