@@ -1,9 +1,12 @@
 {
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
+    {"name":"fnt_battle_r_small","order":1,"path":"fonts/fnt_battle_r_small/fnt_battle_r_small.yy",},
     {"name":"obj_Lyra","order":1,"path":"objects/obj_Lyra/obj_Lyra.yy",},
     {"name":"obj_Vega","order":2,"path":"objects/obj_Vega/obj_Vega.yy",},
     {"name":"draw_color_text","order":1,"path":"scripts/draw_color_text/draw_color_text.yy",},
+    {"name":"create_dialogues","order":2,"path":"scripts/create_dialogues/create_dialogues.yy",},
+    {"name":"spr_button_color","order":7,"path":"sprites/spr_button_color/spr_button_color.yy",},
     {"name":"spr_hand_cursor","order":1,"path":"sprites/spr_hand_cursor/spr_hand_cursor.yy",},
     {"name":"spr_Lyra_old","order":3,"path":"sprites/spr_Lyra_old/spr_Lyra_old.yy",},
     {"name":"spr_Lyra","order":2,"path":"sprites/spr_Lyra/spr_Lyra.yy",},

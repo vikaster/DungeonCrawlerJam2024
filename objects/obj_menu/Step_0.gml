@@ -9,5 +9,6 @@ if(keyboard_check_pressed(ord("P"))){
 		instance_activate_all()
 	}
 }
+current_text_block = "";
 
 draw_sprite(spr_hand_cursor, 0, mouse_x, mouse_y);
