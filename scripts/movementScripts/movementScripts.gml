@@ -76,8 +76,11 @@ function go_back(){
 	var _terrain = terrain[grid_x + a_gridxy[compass_point][0]][grid_y + a_gridxy[compass_point][1]];
 	if (array_get_index(terrain_that_blocks_movement, _terrain) != -1){
 		//Movement Blocked
+		show_debug_message("movement backwards blocked by terrain")
 		exit;
 	}
+	
+	show_debug_message("movement backwards NOT blocked")
 	
 	/*
 		grid_x += a_gridxy[compass_point, 0];
