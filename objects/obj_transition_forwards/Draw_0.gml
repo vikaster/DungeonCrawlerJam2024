@@ -4,8 +4,8 @@ var y_count = 0;
 for (var yy = gy - y_dist; yy < gy; yy ++){
 	
 	var x_count = 0;
-	show_debug_message("y_dist: " + string(y_dist));
-	show_debug_message("");
+	//show_debug_message("y_dist: " + string(y_dist));
+	//show_debug_message("");
 
 	for (var xx = gx - y_dist; xx <= gx + y_dist; xx ++){
 		if (xx >= 0 && gy > 0 && xx < array_length(obj_map.visual_grid) && yy >= 0 && yy < array_length(obj_map.visual_grid) ){
