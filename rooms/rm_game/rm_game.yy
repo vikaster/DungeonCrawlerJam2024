@@ -72,8 +72,8 @@
         {"$GMRInstance":"","%Name":"inst_55436FC0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_55436FC0","objectId":{"name":"objRemovableTerrain","path":"objects/objRemovableTerrain/objRemovableTerrain.yy",},"properties":[
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"objRemovableTerrain","path":"objects/objRemovableTerrain/objRemovableTerrain.yy",},"propertyId":{"name":"removable_terrain_id","path":"objects/objRemovableTerrain/objRemovableTerrain.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"test1",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":3.0,"x":40.0,"y":96.0,},
-      ],"layers":[],"name":"actors","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":false,},
-    {"$GMRTileLayer":"","%Name":"terrain","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"terrain","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":32,"SerialiseWidth":48,"TileCompressedData":[
+      ],"layers":[],"name":"actors","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRTileLayer":"","%Name":"terrain","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"terrain","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":48,"SerialiseWidth":48,"TileCompressedData":[
           -32,3,-16,-2147483648,3,3,-2147483648,-2147483648,-3,3,-12,-2147483648,-5,3,-25,-2147483648,1,3,-4,-2147483648,
           -4,3,-39,-2147483648,1,3,-3,-2147483648,-2,3,-2,-2147483648,-3,3,-37,-2147483648,1,3,-8,-2147483648,
           -7,3,-32,-2147483648,2,3,-2147483648,-6,3,2,0,3,-5,-2147483648,1,3,-5,-2147483648,-2,0,-25,-2147483648,
@@ -96,8 +96,8 @@
           -2147483648,-3,3,-11,-2147483648,-3,3,-28,-2147483648,1,3,-3,-2147483648,-6,3,-8,-2147483648,-2,3,-28,
           -2147483648,1,3,-8,-2147483648,1,3,-9,-2147483648,-2,3,-27,-2147483648,1,3,-8,-2147483648,1,3,-10,-2147483648,
           3,3,-2147483648,-2147483648,-3,3,-22,-2147483648,1,3,-8,-2147483648,1,3,-5,-2147483648,-2,3,1,-2147483648,
-          -6,3,-24,-2147483648,1,3,-8,-2147483648,2,3,0,-4,3,1,-2147483648,-4,3,-28,-2147483648,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"ts_room_editor","path":"tilesets/ts_room_editor/ts_room_editor.yy",},"userdefinedDepth":false,"visible":false,"x":0,"y":0,},
+          -6,3,-24,-2147483648,1,3,-8,-2147483648,2,3,0,-4,3,1,-2147483648,-4,3,-796,-2147483648,
+        ],"TileDataFormat":1,},"tilesetId":{"name":"ts_room_editor","path":"tilesets/ts_room_editor/ts_room_editor.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "name":"rm_game",
@@ -116,7 +116,7 @@
   "resourceType":"GMRoom",
   "resourceVersion":"2.0",
   "roomSettings":{
-    "Height":256,
+    "Height":384,
     "inheritRoomSettings":false,
     "persistent":false,
     "Width":384,

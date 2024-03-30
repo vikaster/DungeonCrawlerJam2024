@@ -1,17 +1,32 @@
-var _csv = load_csv("lom_landscape_example.csv");
+//var _csv = load_csv("lom_landscape_example.csv");
 terrain = [];
 visual_grid = [];
 
-for (var yy = 0; yy < ds_grid_height(_csv); yy ++){
-	for (var xx = 0; xx < ds_grid_width(_csv); xx ++){
-		terrain[xx][yy] = _csv[# xx, yy];
+var _lay_id = layer_get_id("terrain");
+var _terrain_map_id = layer_tilemap_get_id(_lay_id);
+
+map_w = room_width div tilemap_get_tile_width(_terrain_map_id);
+map_h = room_height div tilemap_get_tile_height(_terrain_map_id);
+
+for (var yy = 0; yy < map_h; yy ++){
+	for (var xx = 0; xx < map_w; xx ++){
+		terrain[xx][yy] = tilemap_get(_terrain_map_id, xx, yy);	
 		visual_grid[xx][yy] = terrain[xx][yy];
-	}	
+	}
 }
 
+show_debug_message("map_w: " + string(map_w) + " | map_h: " + string(map_h) + " | array_length(terrain): " + string(array_length(terrain)))
 
-show_debug_message("w: " + string(ds_grid_width(_csv)) );
-show_debug_message("h: " + string(ds_grid_height(_csv)) );
+//for (var yy = 0; yy < ds_grid_height(_csv); yy ++){
+//	for (var xx = 0; xx < ds_grid_width(_csv); xx ++){
+//		terrain[xx][yy] = _csv[# xx, yy];
+//		visual_grid[xx][yy] = terrain[xx][yy];
+//	}	
+//}
+
+
+//show_debug_message("w: " + string(ds_grid_width(_csv)) );
+//show_debug_message("h: " + string(ds_grid_height(_csv)) );
 
 grid_x = 6;
 grid_y = 8;
