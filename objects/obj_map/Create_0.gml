@@ -45,11 +45,11 @@ terrain_that_blocks_movement = [3]; //just mountains for now
 
 terrain_string = "_*~^.";
 
-terrain_sprites[0] = spr_empty;
-terrain_sprites[1] = spr_forest;
-terrain_sprites[2] = spr_downs;
-terrain_sprites[3] = spr_mountain;
-terrain_sprites[4] = spr_citadel;
+terrain_sprites[0] = spr_terrain_0;//spr_empty;
+terrain_sprites[1] = spr_terrain_1;
+terrain_sprites[2] = spr_terrain_2;
+terrain_sprites[3] = spr_terrain_3;
+terrain_sprites[4] = spr_terrain_4;
 terrain_sprites[5] = spr_keep;
 terrain_sprites[6] = spr_village;
 terrain_sprites[7] = spr_city;

@@ -1,0 +1,1 @@
+draw_sprite(spr_terrain_bg, 0, 0, 0);
