@@ -9,7 +9,10 @@
     "name":"Actors",
     "path":"folders/Objects/Actors.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"parActor",
+    "path":"objects/parActor/parActor.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -23,9 +26,7 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"","%Name":"puzzle_piece_id","filters":[],"listItems":[],"multiselect":false,"name":"puzzle_piece_id","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"default\"","varType":2,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,

@@ -5,14 +5,21 @@ visual_grid = [];
 var _lay_id = layer_get_id("terrain");
 var _terrain_map_id = layer_tilemap_get_id(_lay_id);
 
-map_w = room_width div tilemap_get_tile_width(_terrain_map_id);
-map_h = room_height div tilemap_get_tile_height(_terrain_map_id);
+global.cell_size = tilemap_get_tile_width(_terrain_map_id);
+
+map_w = room_width div global.cell_size;
+map_h = room_height div global.cell_size;
 
 for (var yy = 0; yy < map_h; yy ++){
 	for (var xx = 0; xx < map_w; xx ++){
-		terrain[xx][yy] = tilemap_get(_terrain_map_id, xx, yy);	
+		terrain[xx][yy] = {terrain : tilemap_get(_terrain_map_id, xx, yy)};	
 		visual_grid[xx][yy] = terrain[xx][yy];
 	}
+}
+
+with parActor{
+	terrain[x div global.cell_size][y div global.cell_size].actor = id;
+	sprite_index = struct_get(
 }
 
 show_debug_message("map_w: " + string(map_w) + " | map_h: " + string(map_h) + " | array_length(terrain): " + string(array_length(terrain)))

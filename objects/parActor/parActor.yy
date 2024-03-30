@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"objTextItem",
+  "%Name":"parActor",
   "eventList":[],
   "managed":true,
-  "name":"objTextItem",
+  "name":"parActor",
   "overriddenProperties":[],
   "parent":{
     "name":"Actors",
     "path":"folders/Objects/Actors.yy",
   },
-  "parentObjectId":{
-    "name":"parActor",
-    "path":"objects/parActor/parActor.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -26,14 +23,13 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"","%Name":"my_id","filters":[],"listItems":[],"multiselect":false,"name":"my_id","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"default","varType":2,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sprTextItem",
-    "path":"sprites/sprTextItem/sprTextItem.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
