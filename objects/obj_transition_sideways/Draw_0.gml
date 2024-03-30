@@ -20,7 +20,7 @@ for (var y_dist = 4; y_dist >= 1; y_dist --){
 
 	for (var xx = start_x; xx < end_x; xx ++){
 		var w = CAM_W / (1 + (y_dist * 2) );
-		var scale = w/128; show_debug_message(string(y_dist) + " | scale: " + string(scale))
+		var scale = w/128;// show_debug_message(string(y_dist) + " | scale: " + string(scale))
 		var h = 10 * scale;
 
 		if (move_dir == -1) var draw_x = w/2 + (xx * (w));
@@ -28,13 +28,14 @@ for (var y_dist = 4; y_dist >= 1; y_dist --){
 		var draw_y = 144 + (y_count * h);
 
 		var _map_data = list[| x_count];
-		if (_map_data == undefined) continue;
+		if (_map_data != undefined){// continue;
 		
-		show_debug_message("_map_data:"  + string(_map_data))
-		var _spr = obj_map.terrain_sprites[_map_data.terrain_index];
+			show_debug_message("_map_data:"  + string(_map_data))
+			var _spr = obj_map.terrain_sprites[_map_data.terrain_index];
 
-		draw_sprite_ext(_spr, 0, draw_x + ( moved * (a_move_distance[y_dist]) ), draw_y, scale, scale, 0, c_white, 1);
-		draw_actor(_map_data, draw_x + ( moved * (a_move_distance[y_dist]) ), draw_y, scale)
+			draw_sprite_ext(_spr, 0, draw_x + ( moved * (a_move_distance[y_dist]) ), draw_y, scale, scale, 0, c_white, 1);
+			draw_actor(_map_data, draw_x + ( moved * (a_move_distance[y_dist]) ), draw_y, scale)
+		}
 		
 		//DEBUG
 		//draw_set_halign(fa_left);

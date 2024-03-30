@@ -31,7 +31,7 @@ function scr_create_transition(){
 					if (yy >= 0 && yy < array_length(other.visual_grid) && xx >= 0 && xx < array_length(other.visual_grid) ){
 						var ind = other.visual_grid[xx][yy].terrain_index;
 						var spr = other.terrain_sprites[ ind ];
-						var _data = other.visual_grid[xx][yy];
+						var _data = {terrain_index : other.visual_grid[xx][yy].terrain_index, actor : struct_get(other.visual_grid[xx][yy], "actor")}//other.visual_grid[xx][yy];
 					}else _data = undefined;
 
 					ds_list_add(list, _data);
@@ -51,7 +51,7 @@ function scr_create_transition(){
 					if (yy >= 0 && yy < array_length(other.visual_grid) && xx >= 0 && xx < array_length(other.visual_grid) ){
 						var ind = other.visual_grid[xx][yy].terrain_index;
 						var spr = other.terrain_sprites[ ind ];
-						var _data = other.visual_grid[xx][yy];
+						var _data = {terrain_index : other.visual_grid[xx][yy].terrain_index, actor : struct_get(other.visual_grid[xx][yy], "actor")}//other.visual_grid[xx][yy];
 					}else _data = undefined;
 				
 					ds_list_add(list, _data);
@@ -79,7 +79,7 @@ function scr_create_transition(){
 					if (yy >= 0 && yy < array_length(other.visual_grid) && xx >= 0 && xx < array_length(other.visual_grid) ){
 						var ind = other.visual_grid[xx][yy].terrain_index;
 						var spr = other.terrain_sprites[ ind ];
-						var _data = other.visual_grid[xx][yy];
+						var _data = {terrain_index : other.visual_grid[xx][yy].terrain_index, actor : struct_get(other.visual_grid[xx][yy], "actor")}//other.visual_grid[xx][yy];
 					}else _data = undefined;	
 				
 					ds_list_add(list, _data);
@@ -97,7 +97,7 @@ function scr_create_transition(){
 					if (yy >= 0 && yy < array_length(other.visual_grid) && xx >= 0 && xx < array_length(other.visual_grid) ){
 						var ind = other.visual_grid[xx][yy].terrain_index;
 						var spr = other.terrain_sprites[ ind ];
-						var _data = other.visual_grid[xx][yy];
+						var _data = {terrain_index : other.visual_grid[xx][yy].terrain_index, actor : struct_get(other.visual_grid[xx][yy], "actor")};//other.visual_grid[xx][yy];
 					}else _data = undefined;	
 				
 					ds_list_add(list, _data);
