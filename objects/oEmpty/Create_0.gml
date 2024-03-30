@@ -1,5 +1,5 @@
 //notes = "";
-music_data = global.music_data[0];
+music_data = global.music_data[global.battle.music_id];
 
 if (!audio_is_playing(music_data.main)){
 	track = {
@@ -59,7 +59,7 @@ player = {
 enemy = {
 	x : CAM_W/2,
 	y : 0,
-	sprite_index : spr_peasant_coffin,
+	sprite_index : global.battle.enemy_sprite,
 }
 
 bar = {

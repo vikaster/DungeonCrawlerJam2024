@@ -9,10 +9,7 @@
     "name":"Actors",
     "path":"folders/Objects/Actors.yy",
   },
-  "parentObjectId":{
-    "name":"parActor",
-    "path":"objects/parActor/parActor.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
