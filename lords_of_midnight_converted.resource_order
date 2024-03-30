@@ -67,6 +67,7 @@
     {"name":"movementScripts","order":2,"path":"scripts/movementScripts/movementScripts.yy",},
     {"name":"noteScripts","order":2,"path":"scripts/noteScripts/noteScripts.yy",},
     {"name":"scr_update_view_grid","order":7,"path":"scripts/scr_update_view_grid/scr_update_view_grid.yy",},
+    {"name":"scr_create_transition","order":8,"path":"scripts/scr_create_transition/scr_create_transition.yy",},
     {"name":"set_enemy_juice","order":4,"path":"scripts/set_enemy_juice/set_enemy_juice.yy",},
     {"name":"set_player_juice","order":3,"path":"scripts/set_player_juice/set_player_juice.yy",},
     {"name":"start_battle","order":6,"path":"scripts/start_battle/start_battle.yy",},

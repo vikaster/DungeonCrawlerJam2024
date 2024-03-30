@@ -33,6 +33,8 @@ grid_y = 8;
 visual_grid_x = grid_x;
 visual_grid_y = grid_y;
 
+terrain_that_blocks_movement = [3]; //just mountains for now
+
 //enum e_terrain{
 //	plains,
 //	forest,
@@ -77,3 +79,5 @@ a_gridxy[e_compass.west, 0] = -1;
 a_gridxy[e_compass.west, 1] = 0;
 
 transition_sideways = 0; //-1 is right, 1 is left
+
+stored_move = undefined;
