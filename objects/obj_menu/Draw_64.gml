@@ -6,5 +6,5 @@ if(alarm[0] == 0){
 	}
 } else {
 	var chunk = _text[i];
-	draw_color_text(chunk + string(i));
+	draw_color_text(chunk);
 }

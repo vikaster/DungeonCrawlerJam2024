@@ -38,9 +38,11 @@ _text = create_dialogues(["line1", "Peaces is an unnatural state. "],
 ["line7", "Lyra taught him otherwise. She saw through his piety. In her very being was another path: no settling. "],
 ["line8", "Passion was something that could be felt in all facets of life. And it could be quiet, ever-present, and peaceful. "],
 ["line9", "Vega and Lyra became one musical union, and they traveled the world together, playing enormous stages in far-flung places. "],
-["line10", "Always they were on the move, yet they lived at peace wherever they went. Two specks in the gears of a loving machine, content to find their way together"]
+["line10", "Always they were on the move, yet they lived at peace wherever they went."],
+["line11", "Two specks in the gears of a loving machine, content to find their way together"]
 );
 alarm[0] = 360; 
 i = 0;
 show_debug_message(string(_text));
 display_set_gui_size(room_width, room_height);
+skipTheIntro = false;
