@@ -1,7 +1,17 @@
-terrain = load_csv("lom_landscape_example.csv");
+var _csv = load_csv("lom_landscape_example.csv");
+terrain = [];
+visual_grid = [];
 
-show_debug_message("w: " + string(ds_grid_width(terrain)) );
-show_debug_message("h: " + string(ds_grid_height(terrain)) );
+for (var yy = 0; yy < ds_grid_height(_csv); yy ++){
+	for (var xx = 0; xx < ds_grid_width(_csv); xx ++){
+		terrain[xx][yy] = _csv[# xx, yy];
+		visual_grid[xx][yy] = terrain[xx][yy];
+	}	
+}
+
+
+show_debug_message("w: " + string(ds_grid_width(_csv)) );
+show_debug_message("h: " + string(ds_grid_height(_csv)) );
 
 grid_x = 6;
 grid_y = 8;
@@ -29,8 +39,8 @@ terrain_sprites[7] = spr_city;
 terrain_sprites[8] = spr_fortress;
 terrain_sprites[9] = spr_tower;
 
-visual_grid = ds_grid_create(ds_grid_width(terrain), ds_grid_height(terrain) );
-ds_grid_copy(visual_grid, terrain);
+//visual_grid = ds_grid_create(ds_grid_width(terrain), ds_grid_height(terrain) );
+//ds_grid_copy(visual_grid, terrain);
 
 //enum e_compass{
 //	north,

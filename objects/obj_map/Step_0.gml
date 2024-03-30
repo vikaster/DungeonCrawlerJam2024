@@ -28,9 +28,9 @@ if (instance_number(obj_transition_parent) == 0){
 					var debug = "";
 					show_debug_message("y_dist: " + string(y_dist) );
 					for (var xx = other.visual_grid_x - y_dist; xx <= other.visual_grid_x + y_dist; xx ++){
-						if (xx >= 0 && xx < ds_grid_width(other.visual_grid) && yy >= 0 && yy < ds_grid_height(other.visual_grid)){
+						if (xx >= 0 && xx < array_length(other.visual_grid) && yy >= 0 && yy < array_length(other.visual_grid)){
 							
-							var spr = other.visual_grid[# xx, yy];
+							var spr = other.visual_grid[xx][yy];
 							
 						}else spr = spr_frozen;
 						
@@ -51,10 +51,10 @@ if (instance_number(obj_transition_parent) == 0){
 		grid_y += a_gridxy[compass_point, 1];	
 	
 		visual_grid_y --;
-		visual_grid_y = clamp(visual_grid_y, 0, ds_grid_height(visual_grid) - 1 );
+		visual_grid_y = clamp(visual_grid_y, 0, array_length(visual_grid) - 1 );
 	
-		grid_x = clamp(grid_x, 0, ds_grid_width(terrain) - 1 );
-		grid_y = clamp(grid_y, 0, ds_grid_height(terrain) - 1);
+		grid_x = clamp(grid_x, 0, array_length(terrain) - 1 );
+		grid_y = clamp(grid_y, 0, array_length(terrain) - 1);
 		
 		//show_debug_message("grid_x: " + string(grid_x));
 		//show_debug_message("grid_y: " + string(grid_y));
@@ -67,11 +67,11 @@ if (instance_number(obj_transition_parent) == 0){
 		grid_x += a_gridxy[compass_point, 0];
 		grid_y -= a_gridxy[compass_point, 1];
 	
-		grid_x = clamp(grid_x, 0, ds_grid_width(terrain) - 1 );
-		grid_y = clamp(grid_y, 0, ds_grid_height(terrain) - 1 );
+		grid_x = clamp(grid_x, 0, array_length(terrain) - 1 );
+		grid_y = clamp(grid_y, 0, array_length(terrain) - 1 );
 	
 		visual_grid_y ++;
-		visual_grid_y = clamp(visual_grid_y, 0, ds_grid_height(visual_grid) - 1 );
+		visual_grid_y = clamp(visual_grid_y, 0, array_length(visual_grid) - 1 );
 		
 	}
 
