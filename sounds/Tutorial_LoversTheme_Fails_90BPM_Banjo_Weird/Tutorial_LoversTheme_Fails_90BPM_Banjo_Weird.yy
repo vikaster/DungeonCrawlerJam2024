@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"Tutorial_LoversTheme_Fails_90BPM_Banjo_Weird",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":18.666668,
+  "name":"Tutorial_LoversTheme_Fails_90BPM_Banjo_Weird",
+  "parent":{
+    "name":"Tutorial",
+    "path":"folders/Sounds/Area1/Tutorial.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Tutorial_LoversTheme_Fails_90BPM_Banjo_Weird.wav",
+  "type":0,
+  "volume":1.0,
+}
