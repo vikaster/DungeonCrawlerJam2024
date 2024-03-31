@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"obj_lines_of_text",
+  "%Name":"obj_lines_of_text_level3B",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -9,7 +9,7 @@
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_lines_of_text",
+  "name":"obj_lines_of_text_level3B",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",

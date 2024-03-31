@@ -45,7 +45,12 @@ _text = create_dialogues(["line1", "Peaces is an unnatural state. "],
 ["line14", "playing enormous stages in far-flung places. "],
 ["line15", "Always they were on the move, yet they lived at peace wherever they went."],
 ["line16", "Two specks in the gears of a loving machine, content to find their way together"],
-["line17", "But dust does not decide. We lose each other inside of the machine. We lose ourselves.."]);
+["line17", "But dust does not decide. We lose each other inside of the machine. We lose ourselves.."],
+["line18", "We stop hearing the music of its parts. We recognize them for the cries of agony they are"],
+["line19", "And then we see the world for what it might truly be - perhaps, what it has always been, all along."],
+["line20", "the day The Bard Vega awoke in a world beneath the world, with only his banjo and graying memories for company."],
+["line21", "Though he hoped to dispose of both the first chance he had..."]
+);
 canPress = true;
 alarm[0] = 360; 
 alarm[1] = 600;
