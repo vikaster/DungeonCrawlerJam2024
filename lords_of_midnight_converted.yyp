@@ -110,6 +110,7 @@
     {"id":{"name":"scr_init","path":"scripts/scr_init/scr_init.yy",},},
     {"id":{"name":"scr_text","path":"scripts/scr_text/scr_text.yy",},},
     {"id":{"name":"scr_update_view_grid","path":"scripts/scr_update_view_grid/scr_update_view_grid.yy",},},
+    {"id":{"name":"set_battle_data","path":"scripts/set_battle_data/set_battle_data.yy",},},
     {"id":{"name":"set_enemy_juice","path":"scripts/set_enemy_juice/set_enemy_juice.yy",},},
     {"id":{"name":"set_player_juice","path":"scripts/set_player_juice/set_player_juice.yy",},},
     {"id":{"name":"start_battle","path":"scripts/start_battle/start_battle.yy",},},

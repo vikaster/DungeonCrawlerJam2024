@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"set_battle_data",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"set_battle_data",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

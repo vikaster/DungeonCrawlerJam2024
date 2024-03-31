@@ -118,9 +118,9 @@ global.data = {
 		text : ["You... \nI wait in the choke \nof your heart."]	,
 	},
 	
-	minion_id_1 : {text : global.minion_text[irandom(array_length(global.minion_text) - 1)], sprite_index : spr_accidental,
+	minion_id_1 : {text : [global.minion_text[irandom(array_length(global.minion_text) - 1)]], sprite_index : spr_accidental,
 					interact : scr_text,
-					on_done : function(){global.battle = {music_id : undefined, enemy_sprite : spr_accidental}  start_battle()}},
+					on_done : function(){global.battle = {enemy_sprite : spr_accidental, data : set_battle_data("tutorial")}  start_battle()}},
 	minion_id_2 : {text : global.minion_text[irandom(array_length(global.minion_text) - 1)], sprite_index : spr_accidental,
 					interact : scr_text,
 					on_done : function(){global.battle = {music_id : undefined, enemy_sprite : spr_accidental}  start_battle()}},

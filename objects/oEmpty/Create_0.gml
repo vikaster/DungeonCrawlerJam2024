@@ -1,5 +1,17 @@
 //notes = "";
-music_data = global.music_data[global.battle.music_id];
+//music_data = global.music_data[global.battle.music_id];
+
+/*
+tutorial : 
+		{main : Tutorial_LoversTheme_Chords_90BPM, bpm : 90,
+			acc : [{music : "000000000000000000000000000000000001011001000001001111001001", success : Tutorial_LoversTheme_Success_90BPM_Banjo_Weird, fail : Tutorial_LoversTheme_Fails_90BPM_Banjo_Weird}]
+		},
+		*/
+	
+
+music_data = global.battle.data;
+
+show_debug_message("music_data: " + string(music_data))
 
 if (!audio_is_playing(music_data.main)){
 	track = {
@@ -73,5 +85,3 @@ state = e_rhythm_game.play;
 
 player.juice = set_player_juice();
 enemy.juice = set_enemy_juice();
-
-surf_battle_lost = -1;
