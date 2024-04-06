@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprTextItem",
-    "path":"sprites/sprTextItem/sprTextItem.yy",
+    "name":"sprTextItem_1",
+    "path":"sprites/sprTextItem_1/sprTextItem_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -30,7 +30,7 @@ beats = 0;
 //var _y = 16;
 
 //Create test notes
-pixels_per_beat = CAM_W / 16;
+pixels_per_beat = CAM_W / global.battle.data.steps;//16;
 var _y = camera_get_view_y(view_camera[0]) + (CAM_H - 28);
 
 unplayed_notes = [];

@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprPuzzle",
-    "path":"sprites/sprPuzzle/sprPuzzle.yy",
+    "name":"sprPuzzle_1",
+    "path":"sprites/sprPuzzle_1/sprPuzzle_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

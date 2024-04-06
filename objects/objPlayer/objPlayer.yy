@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprPlayer",
-    "path":"sprites/sprPlayer/sprPlayer.yy",
+    "name":"sprPlayer_1",
+    "path":"sprites/sprPlayer_1/sprPlayer_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

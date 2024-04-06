@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprMinion",
-    "path":"sprites/sprMinion/sprMinion.yy",
+    "name":"sprMinion_1",
+    "path":"sprites/sprMinion_1/sprMinion_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprNpc",
-    "path":"sprites/sprNpc/sprNpc.yy",
+    "name":"sprNpc_1",
+    "path":"sprites/sprNpc_1/sprNpc_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,
