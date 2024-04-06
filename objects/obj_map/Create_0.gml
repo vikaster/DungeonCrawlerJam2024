@@ -1,5 +1,7 @@
 //var _csv = load_csv("lom_landscape_example.csv");
 
+global.game_state = e_game.play;//@Rob delete when done testing
+
 enum e_terrain{
 	plains,
 	forest,

@@ -5,7 +5,7 @@ function note_success(_note){
 		image_index = 1;
 		curve_data = success;
 		
-		with oEmpty{
+		with obj_rhythm_game{
 			with track{
 				audio_sound_gain(success, 1, 0);
 				audio_sound_gain(fail, 0, 0);
@@ -32,7 +32,7 @@ function note_fail(_note){
 		image_index = 2;
 		curve_data = fail;
 		
-		with oEmpty{
+		with obj_rhythm_game{
 			with track{
 				audio_sound_gain(success, 0, 0);
 				audio_sound_gain(fail, 1, 0);
@@ -53,7 +53,7 @@ function note_fail(_note){
 	
 	global.player.confidence.current = clamp(global.player.confidence.current - CONFIDENCE_LOST_PER_FAIL, 0, global.player.confidence.max);
 
-	with oEmpty{
+	with obj_rhythm_game{
 		if (global.player.confidence.current == 0){
 			lost_battle = true;
 			battle_lost();

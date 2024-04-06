@@ -21,8 +21,8 @@ if (!audio_is_playing(music_data.main)){
 	}
 }
 
-show_debug_message("oEmpty created")
-if (instance_number(oEmpty) > 1){
+show_debug_message("obj_rhythm_game created")
+if (instance_number(obj_rhythm_game) > 1){
 	instance_destroy();
 	exit;
 }
@@ -30,7 +30,7 @@ beats = 0;
 //var _y = 16;
 
 //Create test notes
-pixels_per_beat = CAM_W / global.battle.data.steps;//16;
+pixels_per_beat = 16;//CAM_W / global.battle.data.steps;//16;
 var _y = camera_get_view_y(view_camera[0]) + (CAM_H - 28);
 
 unplayed_notes = [];

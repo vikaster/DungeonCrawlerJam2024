@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"Tutorial_LoversTheme_Success_90BPM_Banjo_Weird",
+  "%Name":"Tutorial_LoversTheme_Success_135BPM_Banjo_Weird",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,7 +10,7 @@
   "compression":0,
   "conversionMode":0,
   "duration":18.666668,
-  "name":"Tutorial_LoversTheme_Success_90BPM_Banjo_Weird",
+  "name":"Tutorial_LoversTheme_Success_135BPM_Banjo_Weird",
   "parent":{
     "name":"Tutorial",
     "path":"folders/Sounds/Area1/Tutorial.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"Tutorial_LoversTheme_Success_90BPM_Banjo_Weird.wav",
+  "soundFile":"Tutorial_LoversTheme_Success_135BPM_Banjo_Weird.wav",
   "type":0,
   "volume":1.0,
 }

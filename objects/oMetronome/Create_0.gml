@@ -19,3 +19,5 @@ with(activator){event_user(0);} //Launches the event0 of the activator (Event 0 
 step_counter = 0;
 
 first_beat_done = false;
+
+show_debug_message("time_signature: " + string(time_signature))

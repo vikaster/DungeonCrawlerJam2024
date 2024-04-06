@@ -1,3 +1,5 @@
+if (global.game_state != e_game.play) exit;
+
 if (instance_number(obj_transition_parent) == 0){
 	
 	if (stored_move != undefined){

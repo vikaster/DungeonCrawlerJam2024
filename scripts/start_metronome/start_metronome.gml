@@ -6,7 +6,7 @@ function start_metronome(_bpm, _time_signature, _activator_name) {
 	show_debug_message("start_metronome running")
 	//We pass all the variables before creating the metronome
 
-	//var _instance = instance_create_depth(x,y,depth,oEmpty);//@Rob can probably refactor this, wait until you know this code is implemented properly tho
+	//var _instance = instance_create_depth(x,y,depth,obj_rhythm_game);//@Rob can probably refactor this, wait until you know this code is implemented properly tho
 
 	//var _id = _instance.id;
 
@@ -27,5 +27,5 @@ function start_metronome(_bpm, _time_signature, _activator_name) {
 	//return undefined;
 
 	instance_create_depth(x, y, depth, oMetronome, {bpm : _bpm, time_signature : _time_signature, activator_name : _activator_name})
-	instance_create_layer(x,y,"Rhythm_bg",oEmpty);
+	instance_create_layer(x,y,"Rhythm_bg",obj_rhythm_game);
 }

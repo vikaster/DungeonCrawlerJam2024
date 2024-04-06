@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"Tutorial_LoversTheme_Chords_90BPM",
+  "%Name":"Tutorial_LoversTheme_Chords_135BPM",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,7 +10,7 @@
   "compression":0,
   "conversionMode":0,
   "duration":18.666668,
-  "name":"Tutorial_LoversTheme_Chords_90BPM",
+  "name":"Tutorial_LoversTheme_Chords_135BPM",
   "parent":{
     "name":"Tutorial",
     "path":"folders/Sounds/Area1/Tutorial.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"Tutorial_LoversTheme_Chords_90BPM.wav",
+  "soundFile":"Tutorial_LoversTheme_Chords_135BPM.wav",
   "type":0,
   "volume":1.0,
 }

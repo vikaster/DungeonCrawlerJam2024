@@ -14,8 +14,8 @@ global.player = {
 
 global.music_data = {
 	tutorial : 
-		{main : Tutorial_LoversTheme_Chords_90BPM, bpm : 180,
-			acc : [{music : "00000000000000000000001011001000001001111001001", success : Tutorial_LoversTheme_Success_90BPM_Banjo_Weird, fail : Tutorial_LoversTheme_Fails_90BPM_Banjo_Weird}]
+		{main : Tutorial_LoversTheme_Chords_135BPM, bpm : 270,
+			acc : [{music : "000000000000000000000000000000000001011001000001001111001001", success : Tutorial_LoversTheme_Success_135BPM_Banjo_Weird, fail : Tutorial_LoversTheme_Fails_135BPM_Banjo_Weird}]
 		},
 	area_1_blues :
 		{main : BasicBattle_Area1_BluesyRoses_A_Chords_110BPM, bpm : 220, 
