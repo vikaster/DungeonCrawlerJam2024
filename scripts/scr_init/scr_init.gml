@@ -14,43 +14,78 @@ global.player = {
 
 global.music_data = {
 	tutorial : 
-		{main : Tutorial_LoversTheme_Chords_135BPM, bpm : 270,
+		{main : Tutorial_LoversTheme_Chords_135BPM, bpm : 270, note_speed : 13,
 			acc : [{music : "000000000000000000000000000000000001011001000001001111001001", success : Tutorial_LoversTheme_Success_135BPM_Banjo_Weird, fail : Tutorial_LoversTheme_Fails_135BPM_Banjo_Weird}]
 		},
 	area_1_blues :
-		{main : BasicBattle_Area1_BluesyRoses_A_Chords_110BPM, bpm : 220, 
-			acc : [{music : "000000000001000011001001001001000001001011000001001011000001000011001001001001001001001011000001001011001001", success : BasicBattle_Area1_BluesyRoses_A1_Success_110BPM_Banjo, fail : BasicBattle_Area1_BluesyRoses_A1_Fails_110BPM_Banjo},
-				   {music : "000000000001001001000011001001001001001111000001001111000001001010000011001010001001001011000001001011001001", success : BasicBattle_Area1_BluesyRoses_A2_Success_110BPM_Banjo, fail : BasicBattle_Area1_BluesyRoses_A2_Fails_110BPM_Banjo}]
+		{main : BasicBattle_Area1_BluesyRoses_A_Chords_165BPM, bpm : 330, note_speed : 12,
+			acc : [{music : "000000000001000011001001001001000001001011000001001011000001000011001001001001001001001011000001001011001001", success : BasicBattle_Area1_BluesyRoses_A1_Success_165BPM_Banjo, fail : BasicBattle_Area1_BluesyRoses_A1_Fails_165BPM_Banjo},
+				   {music : "000000000001001001000011001001001001001111000001001111000001001010000011001010001001001011000001001011001001", success : BasicBattle_Area1_BluesyRoses_A2_Success_165BPM_Banjo, fail : BasicBattle_Area1_BluesyRoses_A2_Fails_165BPM_Banjo}]
 		},
 	area_1_flamenco :
-		{main : BasicBattle_Area1_FlamnCo_A_Chords_110BPM, bpm : 220,
+		{main : BasicBattle_Area1_FlamnCo_A_Chords_110BPM, bpm : 220, note_speed : 15,
 			acc : [{music : "00000001000011100110001000010111110001111111111000100010101", success : BasicBattle_Area1_FlamnCo_A_Success_110BPM_Banjo, fail : BasicBattle_Area1_FlamnCo_A_Fails_110BPM_Banjo}]
 		},
 	area_1_punk :
-		{main : BasicBattle_Area1_Punk_Chords_90BPM, bpm : 180,
-			music : "000101010111010101110101011101110111",
-			acc : [{success : BasicBattle_Area1_Punk_Success_90BPM_Banjo, fail : BasicBattle_Area1_Punk_Fails_90BPM_Banjo}]
+		{main : BasicBattle_Area1_Punk_Chords_90BPM, bpm : 180, note_speed : 19,
+			acc : [{music : "000101010111010101110101011101110111", success : BasicBattle_Area1_Punk_Success_90BPM_Banjo, fail : BasicBattle_Area1_Punk_Fails_90BPM_Banjo}]
 		},
 	area_1_ouch_A :
-		{main : BasicBattle_Area1_TheOuch_A_Chords_90BPM, bpm : 180,
+		{main : BasicBattle_Area1_TheOuch_A_Chords_90BPM, bpm : 180, note_speed : 19,
 			acc : [{music : "0000000100110001010100010111000100010101", success : BasicBattle_Area1_TheOuch_A1_Success_90BPM_Banjo, fail : BasicBattle_Area1_TheOuch_A1_Fails_90BPM_Banjo}, 
 				   {music : "0000000100110001010001010111000101110101", success : BasicBattle_Area1_TheOuch_A2_Success_90BPM_Banjo, fail : BasicBattle_Area1_TheOuch_A2_Fails_90BPM_Banjo},
 				   {music : "000000000000000000000001000000001001000000000001000001000001000000000001000001001001000000000001000000001011000001000001", success : BasicBattle_Area1_TheOuch_A3_Success_90BPM_Banjo, fail : BasicBattle_Area1_TheOuch_A3_Fails_90BPM_Banjo}]
 		},
+	area_1_ouch_A3 :
+		{
+		main : BasicBattle_Area1_TheOuch_A_Chords_90BPM, bpm : 540, note_speed : 6,
+			acc : [{music : "000000000000000000000001000000001001000000000001000001000001000000000001000001001001000000000001000000001011000001000001", success : BasicBattle_Area1_TheOuch_A3_Success_90BPM_Banjo, fail : BasicBattle_Area1_TheOuch_A3_Fails_90BPM_Banjo}]
+		},
 	area_1_ouch_B :
-		{main : BasicBattle_Area1_TheOuch_B_Chords_90BPM, bpm : 180,
+		{main : BasicBattle_Area1_TheOuch_B_Chords_90BPM, bpm : 180, note_speed : 19,
 			acc : [{music : "0000000100110001010101010111001101110101", success : BasicBattle_Area1_TheOuch_B_Success_90BPM_Banjo, fail : BasicBattle_Area1_TheOuch_B_Fails_90BPM_Banjo}]
-		}
+		},
 
-	//blood_guzzling_fan : 
-	//	{main : BOSSBattle_Boss1_Chords_110BPM, bpm : 220,
-	//		music : "",
-	//		acc : [{success : BOSSBattle_Boss1_Success_110BPM_Banjo, fail : BOSSBattle_Boss1_Fails_110BPM_Banjo}
-	
-	//{main : FansDemand_TheOuch_A_Easy_Chords_90BPM, 
-	// fail : FansDemand_TheOuch_A1_Easy_Fails_90BPM_Banjo,
-	// success : FansDemand_TheOuch_A1_Easy_Success_90BPM_Banjo,
-	// music : "000000010011000101010001011100010001010100000001"}
+	blood_guzzling_fan_p1 : 
+		{main : Boss_1_PART_1_Chords, bpm : 220, note_speed : 15,
+			acc : [{music : "00000001001100010101000101110001000101010011000101000101011100010111010100110001010100010111000100111101001100010101010101110011011101", success : Boss_1_PART_1_Success_110_BPM, fail : Boss_1_PART_1_Fails_110_BPM}]
+		},
+	blood_guzzling_fan_p2 : 
+		{main : Boss_1_PART_2_Chords, bpm : 440, note_speed : 8,
+			acc : [{music : "000000010011010100010011001001010000011110100110101010100110101010101010011010100010011001001010000011110100110101010100110101010101", success : Boss_1_PART_2_Success_220_BPM, fail : Boss_1_PART_2_Fails_220_BPM}]
+		},
+	blood_guzzling_fan_p3 : 
+		{main : Boss_1_PART_3_Chords, bpm : 330, note_speed : 11,
+			acc : [{music : "000000000001000011001001001001000001001011000001001011000001000011001001001001001001001011000001001011001001001001000011001001001001001111000001001111000001001010000011001010001001001011000001001011001001", success : Boss_1_PART_3_Success_165_BPM, fail : Boss_1_PART_3_Fails_165_BPM}]
+		},
+	area_2_blues : 
+		{main : BasicBattle_Area2_BluesyRoses_B_Chords_210BPM, bpm : 420, note_speed : 8,
+			acc : [{music : "000000000001000111001001001011000001001011001011001011000001000111001001001011001001001011000111001011001001", success : BasicBattle_Area2_BluesyRoses_B1_Success_210BPM_Cifteli, fail : BasicBattle_Area2_BluesyRoses_B1_Fails_210BPM_Cifteli},
+				   {music : "00000000000100100100011001001001001001111000001001111000001001010000011001010001001001011000001001011001001", success : BasicBattle_Area2_BluesyRoses_B2_Success_210BPM_Cifteli, fail : BasicBattle_Area2_BluesyRoses_B2_Fails_210BPM_Cifteli}]
+		},
+	area_2_flamenco :
+		{main : BasicBattle_Area2_FlamnCo_B_Chords_220BPM, bpm : 440, note_speed : 8,
+			acc : [{music : "00000000000000010000000001001001000001010110110100000000010001010010010100000001000000011001001010010010100100101000000010001000100010001", success : BasicBattle_Area2_FlamnCo_B_Success_220BPM_Cifteli, fail : BasicBattle_Area2_FlamnCo_B_Fails_220BPM_Cifteli}]
+			
+		},
+	area_2_punk : 
+		{main : BasicBattle_Area2_Punk_Chords_440BPM, bpm : 880, note_speed : 4,
+			acc : [{music : "00000000000000010000010100010001000000010000010100000100000100010000000000010111000100000101000100010001000100000101000100010001000100010001", success : BasicBattle_Area2_Punk_Success_440BPM_Cifteli, fail : BasicBattle_Area2_Punk_Fails_440BPM_Cifteli}]
+		},
+	area_2_ouch_c : 
+		{main : BasicBattle_Area2_TheOuch_C_Chords_110BPM, bpm : 220, note_speed : 15,
+			acc : [{music : "0000000100110001010100010111000100010101", success : BasicBattle_Area2_TheOuch_C1_Success_110BPM_Cifteli, fail : BasicBattle_Area2_TheOuch_C1_Fails_110BPM_Cifteli},
+				   {music : "0000000100110001010001010111000101110101", success : BasicBattle_Area2_TheOuch_C2_Success_110BPM_Cifteli, fail : BasicBattle_Area2_TheOuch_C2_Fails_110BPM_Cifteli},
+			       {music : "0000000100110001010100010111000100110101", success : BasicBattle_Area2_TheOuch_C3_Success_110BPM_Cifteli, fail : BasicBattle_Area2_TheOuch_C3_Fails_110BPM_Cifteli}]
+		},
+	area_2_ouch_d : 
+		{main : BasicBattle_Area2_TheOuch_D_Chords_110BPM, bpm : 220, note_speed : 15,
+			acc : [{music : "00000001001100010101010101110011011101", success : BasicBattle_Area2_TheOuch_D_Success_110BPM_Cifteli, fail : BasicBattle_Area2_TheOuch_D_Fails_110BPM_Cifteli}]	
+		},
+	boss2 : 
+		{main : BOSSBattle_Boss2_Chords_110BPM, bpm : 880, note_speed : 4,
+			acc : [{music : "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000010000000100010000010000010001000000000000000100000100000100010000010000010001000001000001000100000000000000000000000000000001100000000000000000000000000000000000000000000000100000000000100010001010001010001000000000000000000010000000100010000010000010001000000000000000100000000000000000000001000001000100000100000100010000000000000001010101000000000001010100010101010000000000000000000000000000000000000000000100010001010001010001000000000000000000010000000100010000010000010001000000000000000110000010000010001000001000001000100000100000100010000000000010001000000000001000100000000000100010000000000010001000000010000000100000000000000000001000001000001000000000001000100000000010100000000000000010001010101000000000100000111101100010000000000000000000001000000000100000000000100000000010000010001000000000000000101010111110101000111010001110101", success : BOSSBattle_Boss2_Success_110BPM, fail : BOSSBattle_Boss2_Fails_110BPM}]
+		}
 }
 
 global.battle = {
@@ -176,7 +211,7 @@ global.data = {
 	
 	minion_id_1 : {text : [global.minion_text[irandom(array_length(global.minion_text) - 1)]], sprite_index : spr_accidental,
 					interact : scr_text,
-					on_done : function(){global.battle = {enemy_sprite : spr_accidental, data : set_battle_data("tutorial")}  start_battle()}},
+					on_done : function(){global.battle = {enemy_sprite : spr_accidental, data : set_battle_data("boss2", 0)}  start_battle()}},
 	minion_id_2 : {text : global.minion_text[irandom(array_length(global.minion_text) - 1)], sprite_index : spr_accidental,
 					interact : scr_text,
 					on_done : function(){global.battle = {music_id : undefined, enemy_sprite : spr_accidental}  start_battle()}},

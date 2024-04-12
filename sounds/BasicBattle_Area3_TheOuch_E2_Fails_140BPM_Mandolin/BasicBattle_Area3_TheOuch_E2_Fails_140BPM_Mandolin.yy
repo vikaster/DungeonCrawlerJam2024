@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"BasicBattle_Area3_TheOuch_E2_Fails_140BPM_Mandolin",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":10.285714,
+  "name":"BasicBattle_Area3_TheOuch_E2_Fails_140BPM_Mandolin",
+  "parent":{
+    "name":"Ouch",
+    "path":"folders/Sounds/Area3/Ouch.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"BasicBattle_Area3_TheOuch_E2_Fails_140BPM_Mandolin.wav",
+  "type":0,
+  "volume":1.0,
+}

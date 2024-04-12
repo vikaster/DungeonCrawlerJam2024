@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"BOSSBattle_Boss3_Chords_280BPM",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":109.71429,
+  "name":"BOSSBattle_Boss3_Chords_280BPM",
+  "parent":{
+    "name":"BossBattle3",
+    "path":"folders/Sounds/BossBattle3.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"BOSSBattle_Boss3_Chords_280BPM.wav",
+  "type":0,
+  "volume":1.0,
+}

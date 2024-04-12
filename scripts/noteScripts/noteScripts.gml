@@ -51,7 +51,7 @@ function note_fail(_note){
 		}
 	}
 	
-	global.player.confidence.current = clamp(global.player.confidence.current - CONFIDENCE_LOST_PER_FAIL, 0, global.player.confidence.max);
+	//global.player.confidence.current = clamp(global.player.confidence.current - CONFIDENCE_LOST_PER_FAIL, 0, global.player.confidence.max); @Rob uncomment when done
 
 	with obj_rhythm_game{
 		if (global.player.confidence.current == 0){

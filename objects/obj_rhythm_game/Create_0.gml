@@ -51,11 +51,12 @@ note_tracker = {
 
 for (var i = 1; i < string_length(music_data.music); i ++){
 	if (string_char_at(music_data.music, i) == "1"){
-		var _x = ((CAM_W/2) - (i * pixels_per_beat))///x = start_x + (oMetronome.total_beats + 1) * other.pixels_per_beat;
+		var _x = ((CAM_W/2) - ((i) * pixels_per_beat))///x = start_x + (oMetronome.total_beats + 1) * other.pixels_per_beat;
+		//show_debug_message("x: " + string(_x))
 		var _note = instance_create_layer(_x, _y, "Notes", obj_note, {my_beat : i});
 		array_insert(unplayed_notes, 0, _note);
 	
-		if (i == 1) show_debug_message("_x for " + string(i) + ": " + string(_x))
+		if (i == 12) show_debug_message("_x for " + string(i) + ": " + string(_x))
 		//_y += 16;
 	}
 }

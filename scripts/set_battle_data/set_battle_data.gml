@@ -15,5 +15,6 @@ function set_battle_data(_name, _index = 0){
 		bpm : _data.bpm,
 		music : _acc.music,
 		steps : 4,
+		note_speed : _data.note_speed,
 	}
 }

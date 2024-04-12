@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"BasicBattle_Area2_BluesyRoses_B_Chords_210BPM",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":20.571428,
+  "name":"BasicBattle_Area2_BluesyRoses_B_Chords_210BPM",
+  "parent":{
+    "name":"Bluesy",
+    "path":"folders/Sounds/Area2/Bluesy.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"BasicBattle_Area2_BluesyRoses_B_Chords_210BPM.wav",
+  "type":0,
+  "volume":1.0,
+}
