@@ -40,7 +40,7 @@ top = bottom - 32;
 left = (CAM_W/2) - 16//camera_get_view_width(view_camera[0]) - 42;
 right = left + 32;
 
-difficulty = 8; //Higher = easier
+difficulty = struct_get(music_data, "difficulty") == undefined? DEFAULT_DIFFICULTY : struct_get(music_data, "difficulty"); //Higher = easier
 lost_battle = false;
 note_tracker = {
 	success : 0,

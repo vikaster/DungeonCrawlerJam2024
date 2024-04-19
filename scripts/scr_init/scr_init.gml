@@ -3,6 +3,7 @@
 #macro GUI_W display_get_gui_width()
 #macro GUI_H display_get_gui_height()
 #macro GAMESPEED_FPS game_get_speed(gamespeed_fps)
+#macro DEFAULT_DIFFICULTY 16
 
 #macro CONFIDENCE_LOST_PER_FAIL 2
 #macro CONFIDENCE_GAINED_PER_SUCCESS 1

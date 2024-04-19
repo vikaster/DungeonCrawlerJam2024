@@ -12,6 +12,10 @@ draw_line(0, top + 16, CAM_W, bottom - 16);
 
 draw_circle(left + 16, top + 16, difficulty, true);
 
+//Difficulty
+draw_set_colour(c_orange);
+draw_circle(left + 16, top + 16, difficulty, true);
+
 draw_sprite(enemy.sprite_index, 0, enemy.x, enemy.y);
 draw_sprite(spr_player, 0, player.x, player.y);
 
