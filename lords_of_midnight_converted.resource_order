@@ -104,7 +104,7 @@
     {"name":"Boss_1_PART_2_Chords","order":3,"path":"sounds/Boss_1_PART_2_Chords/Boss_1_PART_2_Chords.yy",},
     {"name":"Boss_1_PART_2_Fails_220_BPM","order":4,"path":"sounds/Boss_1_PART_2_Fails_220_BPM/Boss_1_PART_2_Fails_220_BPM.yy",},
     {"name":"Boss_1_PART_2_Success_220_BPM","order":5,"path":"sounds/Boss_1_PART_2_Success_220_BPM/Boss_1_PART_2_Success_220_BPM.yy",},
-    {"name":"Boss_1_PART_3_Chords61","order":6,"path":"sounds/Boss_1_PART_3_Chords61/Boss_1_PART_3_Chords61.yy",},
+    {"name":"Boss_1_PART_3_Chords","order":6,"path":"sounds/Boss_1_PART_3_Chords/Boss_1_PART_3_Chords.yy",},
     {"name":"Boss_1_PART_3_Fails_165_BPM","order":7,"path":"sounds/Boss_1_PART_3_Fails_165_BPM/Boss_1_PART_3_Fails_165_BPM.yy",},
     {"name":"Boss_1_PART_3_Success_165_BPM","order":8,"path":"sounds/Boss_1_PART_3_Success_165_BPM/Boss_1_PART_3_Success_165_BPM.yy",},
     {"name":"BOSS_3_Change_Fails_280_BPM","order":1,"path":"sounds/BOSS_3_Change_Fails_280_BPM/BOSS_3_Change_Fails_280_BPM.yy",},
