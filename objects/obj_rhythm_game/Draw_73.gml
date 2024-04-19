@@ -26,3 +26,11 @@ var _spr_h = sprite_get_height(spr_health_bar);
 
 draw_sprite(spr_health_bar_bg, 0, bar.x, bar.y);
 draw_sprite_part(spr_health_bar, 0, 0, 0, floor(_spr_w * _perc), _spr_h, bar.x + 2, bar.y + 2);
+
+//Last Note
+if (array_length(unplayed_notes) > 0){
+	var _last_note = array_last(unplayed_notes);
+	with _last_note{
+		draw_sprite(spr_next_note, 0, x, y - 16);	
+	}
+}

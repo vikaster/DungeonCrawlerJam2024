@@ -277,6 +277,7 @@
     {"id":{"name":"sprBoss","path":"sprites/sprBoss/sprBoss.yy",},},
     {"id":{"name":"Sprite27","path":"sprites/Sprite27/Sprite27.yy",},},
     {"id":{"name":"Sprite29","path":"sprites/Sprite29/Sprite29.yy",},},
+    {"id":{"name":"spr_next_note","path":"sprites/spr_next_note/spr_next_note.yy",},},
     {"id":{"name":"sprMinion_1","path":"sprites/sprMinion_1/sprMinion_1.yy",},},
     {"id":{"name":"sprMinion","path":"sprites/sprMinion/sprMinion.yy",},},
     {"id":{"name":"sprNpc_1","path":"sprites/sprNpc_1/sprNpc_1.yy",},},

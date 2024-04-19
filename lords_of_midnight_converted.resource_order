@@ -120,6 +120,7 @@
     {"name":"spr_stepping_stone","order":2,"path":"sprites/spr_stepping_stone/spr_stepping_stone.yy",},
     {"name":"spr_text_id","order":1,"path":"sprites/spr_text_id/spr_text_id.yy",},
     {"name":"sprBoss_1","order":9,"path":"sprites/sprBoss_1/sprBoss_1.yy",},
+    {"name":"spr_next_note","order":12,"path":"sprites/spr_next_note/spr_next_note.yy",},
     {"name":"sprMinion_1","order":7,"path":"sprites/sprMinion_1/sprMinion_1.yy",},
     {"name":"sprNpc_1","order":6,"path":"sprites/sprNpc_1/sprNpc_1.yy",},
     {"name":"sprPlayer_1","order":5,"path":"sprites/sprPlayer_1/sprPlayer_1.yy",},
