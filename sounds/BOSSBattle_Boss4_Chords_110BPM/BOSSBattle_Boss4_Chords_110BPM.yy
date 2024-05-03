@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"BOSSBattle_Boss4_Chords_110BPM",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":93.818184,
+  "name":"BOSSBattle_Boss4_Chords_110BPM",
+  "parent":{
+    "name":"BossBattle4",
+    "path":"folders/Sounds/BossBattle4.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"BOSSBattle_Boss4_Chords_110BPM.wav",
+  "type":0,
+  "volume":1.0,
+}
