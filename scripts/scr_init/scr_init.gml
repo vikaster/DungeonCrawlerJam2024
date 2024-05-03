@@ -7,6 +7,7 @@
 
 #macro CONFIDENCE_LOST_PER_FAIL 2
 #macro CONFIDENCE_GAINED_PER_SUCCESS 1
+#macro MIN_DIST_TO_PLAY 32
 
 global.player = {
 	self_respect : {current : 5, max : 10, display : 5},

@@ -16,6 +16,11 @@ draw_circle(left + 16, top + 16, difficulty, true);
 draw_set_colour(c_orange);
 draw_circle(left + 16, top + 16, difficulty, true);
 
+//MIN_DIST_TO_PLAY
+//draw_set_color(c_lime)
+//draw_circle(left + 16, top + 16, MIN_DIST_TO_PLAY, true);
+
+//Enemy
 draw_sprite(enemy.sprite_index, 0, enemy.x, enemy.y);
 draw_sprite(spr_player, 0, player.x, player.y);
 
