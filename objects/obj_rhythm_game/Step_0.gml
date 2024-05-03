@@ -1,6 +1,6 @@
 if (state == e_rhythm_game.play){
 	if (array_length(unplayed_notes) > 0){
-		if (mouse_check_button_pressed(mb_left)){
+		if (mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_anykey)){
 
 			show_debug_message("attempting to play note")
 			var _len = array_length(unplayed_notes);
